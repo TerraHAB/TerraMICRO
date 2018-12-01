@@ -1,0 +1,64 @@
+%!TEX root = root.tex
+%% *************************************************************************
+%% HABra Cadabra
+%% Mission and System Requirements Specification
+%%
+%% This document shall list and describe all mission requirements and their 
+%% criteria for success, all system requirements and their criteria for 
+%% performance, and (when applicable) methods by which these requirments 
+%% shall be evaluated.
+%%
+%% The intent of this specification is to quantify and control the criteria
+%% by which mission success is defined, and to provide traceability to each
+%% subsystem's performance to ensure mission success is achieved by the 
+%% vehicle's design.
+%%
+%% Created November 26, 2018 by Phil Linden
+%% *************************************************************************
+
+\documentclass[conf]{new-aiaa} 
+\usepackage[T1]{fontenc} % change text encoding to make it more crisp
+\usepackage{graphicx} % enable toolbox for embedding figures and pictures
+\usepackage{siunitx} % enable package for easily formatting units
+\usepackage{longtable,tabularx} % make fancy tables
+\usepackage{booktabs} % make beautiful tables!
+\usepackage{hyperref} % enable package for cross-referencing figures, sections, references etc.
+% how to use hyperref: http://www2.washjeff.edu/users/rhigginbottom/latex/resources/lecture09.pdf
+
+
+
+\title{TerraMICRO High Altitude Balloon Mission and System Requirements
+    Specification}
+
+\author{Daniel~Mitchell}
+\affil{\github{ddm9599}}
+
+\author{Phil~Linden}
+\affil{\github{runphilrun}}
+
+\author{T.~J.~Tarazevits}
+\affil{\github{venku22}}
+
+\author{Matt~Glazer}
+\affil{\github{mglazer}}
+
+\begin{document}
+\maketitle%
+
+\newcommand\subdir{tex} % subdirectory for included tex files
+
+\section{Introduction}
+    \input{\subdir/intro.tex}
+
+\section{Mission Requirements}
+    \input{\subdir/mission-reqs.tex}
+
+\section{System Requirements}
+    \input{\subdir/system-reqs.tex}
+
+% \bibliographystyle{}
+% \bibliography{}
+
+\section{Nomenclature \& Glossary}
+    \input{\subdir/glossary.tex}
+\end{document}%%
