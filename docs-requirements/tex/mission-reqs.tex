@@ -15,4 +15,56 @@
 %% Created November 26, 2018 by Phil Linden
 %% *************************************************************************
 
-it navigates.
+\subsection{Engineering \& Technology Objectives}
+\subsubsection{Balloon Monitoring}
+A system will be able to monitor the temperature and pressure within a balloon
+and report that back to the HAB payload.
+
+
+\subsubsection{Payload design (\textmu HAB)}
+Flight test microHAB-- a flexible, expandable, and cost-effective platform to
+support many different mission profiles/payloads and includes all of the basics
+for a HAB launch. 
+% \cite{dans microhab design doc}
+
+\subsubsection{Altitude regulation}
+Limit maximum altitude and rate of ascent by thecontrolled release of helium
+during flight to prolong the mission duration. Maintain 75,000 feet altitude
+for at least 30 minutes. 
+
+\subsubsection{High quality video}
+Horizon-looking full color video at 1080p\@30 fps or better (1080p\@60fps or
+4K\@30fps preferred).
+
+\subsubsection{Video capture burst event}
+Capture the balloon burst event with minimum resolution of 720p\@60fps or 
+better. (720p\@120fps or 1080p\@120fps preferred)
+
+\subsection{Science Objectives}
+\subsubsection{NDVI vegetation density}
+Use NDVI with a commercially available RGB (VNIR) camera to estimate vegetation
+density from images in real time during flight. Minimum video quality
+480p\@30fps.
+
+\subsection{Key Design Features}
+There are several design features that are specific requests from TerraHAB
+engineers. The flight system should meet these requests or provide justification
+for not including them.
+
+\begin{itemize}
+    \item Externally accessible remove before flight pin(s). 
+    \item Include displays and self-test and status check codes to ensure that the balloon is stable and behaving nominally for flight.
+    \item Power pin (included in microhab), startup sequence pin, launch pin, etc.
+    \item Simplify filling during launch preparations and provide a quick-disconnect from helium filling.
+\end{itemize}
+ 
+\subsection{Key Design Requirements}
+There are some additional features that are essential for a successful small HAB
+flight system.
+
+\begin{itemize}
+    \item Multiple independent cut-down mechanisms
+    \item Redundant tracking systems
+    \item 3 to 6 hours of powered flight time
+    \item Under 6 lbs.
+\end{itemize}
