@@ -13,58 +13,76 @@
 %% vehicle's design.
 %%
 %% Created November 26, 2018 by Phil Linden
+%%
+%% DEPENDENCIES
+%%  \usepackage{tabularx}
+%%  \usepackage{hyperref}
 %% *************************************************************************
+\section{Mission Requirements}
+\subsection{Key Design Requirements}
+Regardless of the mission objectives, the HAB system must meet several key 
+design requirements in order to achieve mission success. These requirements
+serve as success criteria and also as constraints to the design trade space.
+
+The flight vehicle \textbf{must}:
+\begin{itemize}
+    \item Include multiple independent cut-down mechanisms.
+    \item Include redundant tracking systems.
+    \item Achieve 3 to 6 hours of powered flight time
+    \item Have a total mass of no more than 2.72\,kg (6\,lbs.).
+\end{itemize}
 
 \subsection{Engineering \& Technology Objectives}
-\subsubsection{Balloon Monitoring}
-A system will be able to monitor the temperature and pressure within a balloon
-and report that back to the HAB payload.
+\label{mission-reqs:eng-objectives}
+The following objectives provide the basis for TerraHAB's criteria for success
+and drive all other mission requirements. These objectives steer the vision
+and end goals for the mission and every subsystem or feature in the end result 
+should support at least one of these objectives.
 
+\begin{table}[h!]
+    \centering
+    \begin{tabularx}{\textwidth}{lX}
+        \textit{In-Flight Balloon Monitoring} & A system will be able to monitor 
+        the  temperature and pressure within a balloon and report that back to the 
+        HAB payload. \\
 
-\subsubsection{Payload design (\textmu HAB)}
-Flight test microHAB-- a flexible, expandable, and cost-effective platform to
-support many different mission profiles/payloads and includes all of the basics
-for a HAB launch. 
-% \cite{dans microhab design doc}
+        \textit{\textmu HAB Avionics Platform} & Flight test \textmu HAB as a 
+        flexible, expandable, and cost-effective platform to support many 
+        different mission profiles or payloads with all of the basics
+        for a HAB launch included out of the box. \\ % \cite{dans microhab design doc} 
 
-\subsubsection{Altitude regulation}
-Limit maximum altitude and rate of ascent by thecontrolled release of helium
-during flight to prolong the mission duration. Maintain 75,000 feet altitude
-for at least 30 minutes. 
+        \textit{Open-Loop Altitude Regulation} & Limit maximum altitude and rate of 
+        ascent by the controlled release of helium during flight to prolong the 
+        mission duration. Maintain 75,000 feet altitude for at least 30 minutes. \\
 
-\subsubsection{High quality video}
-Horizon-looking full color video at 1080p\@30 fps or better (1080p\@60fps or
-4K\@30fps preferred).
+        \textit{HD On-Board Video} & Horizon-looking full color video at 
+        1080p\@30 fps or better (1080p\@60fps or 4K\@30fps preferred). \\
 
-\subsubsection{Video capture burst event}
-Capture the balloon burst event with minimum resolution of 720p\@60fps or 
-better. (720p\@120fps or 1080p\@120fps preferred)
+        \textit{Video Capture of Balloon Burst} & Capture the balloon burst 
+        event with minimum resolution of 720p\@60fps or better. 
+        (720p@120fps or 1080p@120fps preferred) \\
+    \end{tabularx}
+\end{table}
 
-\subsection{Science Objectives}
-\subsubsection{NDVI vegetation density}
-Use NDVI with a commercially available RGB (VNIR) camera to estimate vegetation
-density from images in real time during flight. Minimum video quality
-480p\@30fps.
-
-\subsection{Key Design Features}
+\subsection{Stretch Goals \& Desired Features}
 There are several design features that are specific requests from TerraHAB
 engineers. The flight system should meet these requests or provide justification
-for not including them.
+for not including them. These features are not required for mission success
+as defined in \autoref{mission-reqs:eng-objectives}, but it is expected that
+the TerraHAB team strives to accomplish these goals.
 
-\begin{itemize}
-    \item Externally accessible remove before flight pin(s). 
-    \item Include displays and self-test and status check codes to ensure that the balloon is stable and behaving nominally for flight.
-    \item Power pin (included in microhab), startup sequence pin, launch pin, etc.
-    \item Simplify filling during launch preparations and provide a quick-disconnect from helium filling.
-\end{itemize}
- 
-\subsection{Key Design Requirements}
-There are some additional features that are essential for a successful small HAB
-flight system.
-
-\begin{itemize}
-    \item Multiple independent cut-down mechanisms
-    \item Redundant tracking systems
-    \item 3 to 6 hours of powered flight time
-    \item Under 6 lbs.
-\end{itemize}
+\begin{table}
+    \centering
+    \begin{tabularx}{\textwidth}{lX}
+        \textit{``Remove Before Flight'' Pins} & Include externally accessible remove before
+        flight pins to safe or disarm subsystems while on the ground, such as a power 
+        pin (included in \textmu HAB), startup sequence pin, launch pin, etc. \\
+        \textit{Status Inticators \& Displays} & Include displays and self-test and status check codes to ensure that
+        the balloon is stable and behaving nominally for flight. \\
+        \textit{Simple Balloon Filling} & Simple and clear procedures during flight 
+        preparations, including a quick-disconnect from helium fill plumbing. \\
+        \textit{Vegetation Density Experiment} & Use NDVI with a commercially 
+        available RGB (VNIR) camera to estimate vegetation density from images 
+        in real time during flight. Minimum video quality 480p\@30fps. \\
+    \end{tabularx}
+\end{table}
