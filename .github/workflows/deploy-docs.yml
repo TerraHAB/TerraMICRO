@@ -13,11 +13,10 @@ jobs:
     
     - name: Build
     - uses: ammaraskar/sphinx-action@master
-      with:
-        docs-folder: "docs/"
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
-        pre-build-command: "pip install sphinx_rtd_theme"
-        build-command: "make html"
+      run: |
+        pip install sphinx_rtd_theme
+        cd docs
+        make html
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2
