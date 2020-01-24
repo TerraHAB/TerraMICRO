@@ -11,10 +11,9 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     
-    - name: Build
-    - uses: ammaraskar/sphinx-action@master
+    - name: Build with Sphinx
       run: |
-        pip install sphinx_rtd_theme
+        pip install sphinx sphinx_rtd_theme
         cd docs
         make html
 
