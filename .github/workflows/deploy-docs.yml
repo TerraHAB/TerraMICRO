@@ -12,10 +12,9 @@ jobs:
     - uses: actions/checkout@v1
     
     - name: Build with Sphinx
-      run: |
-        pip install sphinx sphinx_rtd_theme
-        cd docs
-        make html
+      uses: ammaraskar/sphinx-action@master
+      with:
+        pre-build-command: "pip install sphinx sphinx_rtd_theme"
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2
