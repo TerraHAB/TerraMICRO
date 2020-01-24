@@ -189,3 +189,6 @@ TSWLatexianTemp*
 
 # MacOS
 .DS_Store
+
+# Sphinx
+docs/_build

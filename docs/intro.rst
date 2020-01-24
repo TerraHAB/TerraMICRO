@@ -1,32 +1,16 @@
-%!TEX root = ../docs-requirements.tex
-%% *************************************************************************
-%% TerraMICRO Mission Success Criteria and System Requirements
-%%
-%% This document shall list and describe all system requirements, their
-%% criteria for performance, and (when applicable) methods by which these
-%% requiremnts shall be evaluated.
-%%
-%% The intent of this specification is to quantify and control the criteria 
-%% by which mission success is defined, and to provide traceability to each
-%% subsystem's performance to ensure mission success is achieved by the
-%% vehicle's design.
-%%
-%% Created November 26, 2018 by Phil Linden
-%%
-%% DEPENDENCIES 
-%%      \usepackage{hyperref}
-%% *************************************************************************
+.. _intro:
 
-\section{Introduction}
+Introduction
+============
 
 High Altitude Balloons (HABs) are a low-cost, relatively low-risk vehicles that
 are a perfect platform for conducting small scale atmospheric studies, remote
-sensing, and other experiments that make use of the ``edge of space'' conditions
+sensing, and other experiments that make use of the "edge of space" conditions
 found at altitudes in excess of 65,000 feet above sea level. Atmospheric
 conditions in the stratosphere are fairly well understood insofar as the
 humidity, temperatures, and pressures that must be weathered by a flight
 platform. More specifically, ambient temperatures and pressures between
-65,000--100,000\,feet altitude see extremes of -60\textdegree\,C and $0.05$\,atm
+65,000--100,000, feet altitude see extremes of -60C and 0.05 atm
 respectively.
 
 This opens the door to opportunities for generic or payload-agnostic HAB
@@ -35,7 +19,7 @@ approximate space. One such platform is an avionics architecture called \textmu
 HAB, which is designed specifically to be a robust and all-inclusive avionics
 package for HAB vehicles. The
 \href{https://esto.nasa.gov/technologists_trl.html}{Technology Readiness Level}
-of \textmu HAB is TRL 2. 
+of \textmu HAB is TRL 2.
 
 TerraMICRO is a high altitude balloon technology demonstration mission. The key
 objectives of this mission are to validate the new \textmu HAB avionics
@@ -48,11 +32,3 @@ future missions, and as such many of the systems beyond the core avionics are
 building blocks toward this goal. At the time of launch, \textmu HAB should be
 TRL 3, and upon the successful completion of the TerraMICRO mission this
 architecture will be TRL 5.
-
-This document shall list and describe all mission requirements and their
-criteria for success, all system requirements and their criteria for
-performance, and (when applicable) methods by which the aforementioned
-requiremnts shall be evaluated. The intent of this specification is to quantify
-and control the criteria by which mission success is defined, and to provide
-traceability to each subsystem's performance to ensure mission success is
-achieved by the vehicle's design.

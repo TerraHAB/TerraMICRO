@@ -1,3 +1,8 @@
+.. _mission-reqs:
+
+Mission Requirements
+====================
+
 %!TEX root = ../docs-requirements.tex
 %% *************************************************************************
 %% TerraMICRO Mission Success Criteria and System Requirements
