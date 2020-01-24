@@ -13,6 +13,7 @@ jobs:
     
     - name: Build with Sphinx
       run: |
+        apt-get install python3-sphinx
         pip install sphinx sphinx_rtd_theme
         cd docs
         make html
