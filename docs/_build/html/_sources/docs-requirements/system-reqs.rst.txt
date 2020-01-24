@@ -1,0 +1,35 @@
+.. _system-reqs:
+
+Title
+=====
+
+
+%!TEX root = ../docs-requirements.tex
+%% *************************************************************************
+%% TerraMICRO Mission Success Criteria and System Requirements
+%%
+%% This document shall list and describe all system requirements, their
+%% criteria for performance, and (when applicable) methods by which these
+%% requiremnts shall be evaluated.
+%%
+%% The intent of this specification is to quantify and control the criteria 
+%% by which mission success is defined, and to provide traceability to each
+%% subsystem's performance to ensure mission success is achieved by the
+%% vehicle's design.
+%%
+%% Created November 26, 2018 by Phil Linden
+%%
+%% DEPENDENCIES 
+%%      \usepackage{hyperref}
+%% *************************************************************************
+
+\section{System Requirements}
+All of the systems demonstrated by this mission shall be thoroughly tested on
+the ground prior to launch. Flight data and telemetry recorded during the flight
+should be consistent with behavior observed during testing.
+
+\subsection{Avionics \& Telemetry}
+
+\subsection{Bus \& Recovery}
+
+\subsection{Altitude Regulation}

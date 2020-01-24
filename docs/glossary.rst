@@ -1,0 +1,24 @@
+.. _glossary:
+
+Glossary
+========
+Definitions of common terms including units of measure, natural constants,
+acronyms, initialisms, abbreviations, and so on
+
+.. {\renewcommand\arraystretch{1.0}
+.. \noindent\begin{longtable*}{@{}l @{\quad=\quad} l@{}}
+.. $A$  & amplitude of oscillation \\
+.. $a$ &    cylinder diameter \\
+.. $C_p$& pressure coefficient \\
+.. $Cx$ & force coefficient in the \textit{x} direction \\
+.. $Cy$ & force coefficient in the \textit{y} direction \\
+.. c   & chord \\
+.. d$t$ & time step \\
+.. $Fx$ & $X$ component of the resultant pressure force acting on the vehicle \\
+.. $Fy$ & $Y$ component of the resultant pressure force acting on the vehicle \\
+.. $f, g$   & generic functions \\
+.. $h$  & height \\
+.. $i$  & time index during navigation \\
+.. $j$  & waypoint index \\
+.. $K$  & trailing-edge (TE) nondimensional angular deflection rate
+.. \end{longtable*}}
