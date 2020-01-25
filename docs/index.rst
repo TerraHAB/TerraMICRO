@@ -7,15 +7,14 @@
    reStructuredText Primer: http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
    Style reference: https://documentation-style-guide-sphinx.readthedocs.io/en/latest/style-guide.html
 
-
-Welcome to TerraMICRO's documentation!
-======================================
+.. include:: ../README.rst
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
    intro
+   concepts
    design-reqs
    glossary
 
