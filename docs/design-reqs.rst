@@ -38,7 +38,7 @@ for success and drive all other mission requirements. These objectives steer
 the vision and end goals for the mission and every subsystem or feature in the
 end result should support at least one of these objectives.
 
-.. list-table:: Engineering & Technology Objectives
+.. list-table:: Example Engineering & Technology Objectives
    :header-rows: 0
 
    * - **In-Flight Balloon Monitoring**
@@ -70,7 +70,7 @@ justification for not including them. These features are not required for
 mission success as defined in \autoref{mission-reqs:eng-objectives}, but it is
 expected that the TerraHAB team strives to accomplish these goals.
 
-.. list-table:: Stretch Goals & Desired Features
+.. list-table:: Example Stretch Goals & Desired Features
    :header-rows: 0
 
    * - **Remove Before Flight Pins**
