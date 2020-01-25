@@ -48,8 +48,6 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_theme = 'sphinx_rtd_theme'
 
 html_theme_options = {
-    'github_url': 'https://github.com/TerraHAB/TerraMICRO',
-    # 'canonical_url': '',
     # 'analytics_id': 'UA-XXXXXXX-1',  # Provided by Google in your dashboard
     'logo_only': False,
     'display_version': True,

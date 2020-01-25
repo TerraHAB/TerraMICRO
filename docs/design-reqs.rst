@@ -4,7 +4,6 @@
 Design Requirements
 *******************
 
-============================
 Critical Design Requirements
 ============================
 
@@ -31,7 +30,6 @@ a safe, controlled flight.
 
 .. _mission-reqs:
 
-========================
 Mission Success Criteria
 ========================
 
@@ -64,7 +62,7 @@ end result should support at least one of these objectives.
 
 
 Stretch Goals
-=============
+-------------
 
 There are several design features that are specific requests from TerraHAB
 engineers. The flight system should meet these requests or provide
@@ -94,7 +92,6 @@ expected that the TerraHAB team strives to accomplish these goals.
 
 .. _system-reqs:
 
-===================
 System Requirements
 ===================
 
@@ -109,22 +106,25 @@ vehicle's design.
    flight should be consistent with behavior observed during testing.
 
 Avionics
-========
+--------
 
 Power
-=====
+-----
+
+Flight Software
+---------------
 
 Telemetry
-=========
+---------
 
 Recovery
-========
+--------
 
 Payload Bus & Interfaces
-========================
+------------------------
 
 Instruments & Sensors
-=====================
+---------------------
 
 Altitude Regulation
-===================
+-------------------

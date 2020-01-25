@@ -9,14 +9,12 @@
 
 .. include:: ../README.rst
 
-Welcome to TerraMICRO's documentation!
-======================================
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
    intro
+   concepts
    design-reqs
    glossary
 
