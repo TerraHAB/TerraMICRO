@@ -81,10 +81,10 @@ electronics in flight. For an extra challenge, apply any of the following
 constraints:
 
 - Payload electronics do not exceed $30.
-- Image processing algorithms have a practical or scientific use beyond a 
+- Image processing algorithms have a practical or scientific use beyond a
   simple demonstrator.
 - Image processing takes place on an FPGA. Bonus if it occurs in real time.
-- Image processing includes data fusion with additional sensors or camera 
+- Image processing includes data fusion with additional sensors or camera
   sources.
 
 Real-time Data Transfer
@@ -116,7 +116,7 @@ Instrument the payload and balloon to test the model in flight. For an extra
 challenge, apply any of the following constraints:
 
 - Model the burst event only using parameters that can be measured in flight.
-- Test the model on the ground with simulated atmospheric conditions and a 
+- Test the model on the ground with simulated atmospheric conditions and a
   sub- or full-scale balloon.
 - Record high-speed video of the balloon bursting in flight.
 
