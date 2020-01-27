@@ -84,7 +84,7 @@ Stretch Goals
 There are several design features that are specific requests from TerraHAB
 engineers. The flight system should meet these requests or provide
 justification for not including them. These features are not required for
-mission success as defined in \autoref{mission-reqs:eng-objectives}, but it is
+mission success as defined in _mission-reqs:, but it is
 expected that the TerraHAB team strives to accomplish these goals.
 
 .. list-table:: Example Stretch Goals & Desired Features
