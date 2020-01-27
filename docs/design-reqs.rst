@@ -4,16 +4,33 @@
 Design Requirements
 *******************
 
+TerraMICRO's technical design is driven by making engineering decisions to meet
+the design requirements listed in this section. All of the requirements here
+must be met before the mission takes flight, with test data to prove it.
+
+By designing the vehicle to meet a set of requirements, we hold our engineering
+decisions accountable and resist the temptations of scope creep and "cool
+factor."
+
+When we, as a team, elect to override one of these requirements, we will commit
+to providing justification for doing so (even if the reason is *because we
+thought it would be more fun this way* or *because we couldn't afford to buy
+the parts needed to do it right.*)
+
 Critical Design Requirements
 ============================
 
 Regardless of the mission objectives, the HAB system must meet several key
 design requirements in order to achieve mission success. These requirements
 serve as success criteria and also as constraints to the design trade space.
-These criteria stem from `federal regulations
+
+Some requirements are non-negotiable, such as `FCC or FAA regulations
 <https://www.ecfr.gov/cgi-bin/text-idx?rgn=div5&node=14:2.0.1.3.15#sp14.2.101.d>`_
 for unmanned free balloons and other basic functions to ensure
-a safe, controlled flight.
+a safe, controlled flight. Other requirements may come from
+limitations related to cost, manufacturability, which stem from the TerraHAB
+organization's own budgets. These critical requirements supercede any mission
+or design requirements that contribute to meeting the mission's objectives.
 
 .. list-table:: Critical Design Requirements
    :header-rows: 0
@@ -87,7 +104,7 @@ expected that the TerraHAB team strives to accomplish these goals.
    * - **Vegetation Density Experiment**
      - Use NDVI with a commercially available RGB (VNIR) camera to estimate
        vegetation density from images in real time during flight. Minimum video
-       quality 480p@30fps.
+       quality 480p @ 30fps.
 
 
 .. _system-reqs:

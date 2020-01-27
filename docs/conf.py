@@ -20,7 +20,7 @@
 project = 'TerraMICRO'
 copyright = '2020, TerraHAB'
 author = 'TerraHAB'
-
+master_doc = 'index'
 
 # -- General configuration ---------------------------------------------------
 
