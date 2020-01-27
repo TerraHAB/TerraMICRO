@@ -39,7 +39,7 @@ How to build the documentation locally
 
    Start editing the ``.rst`` files within ``TerraMICRO/docs`` with whatever you want.
    for help styling your text, use 
-   `this awesome guide<https://developer.lsst.io/restructuredtext/style.html#>`_ or `this other awesome guide<https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst>`_
+   `this awesome guide <https://developer.lsst.io/restructuredtext/style.html#>`_ or `this other awesome guide <https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst>`_.
 
 
 #. **Build the docs.**
