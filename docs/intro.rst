@@ -30,21 +30,21 @@ platform. More specifically, ambient temperatures and pressures between
 This opens the door for generic or payload-agnostic HAB platforms designed to
 carry an experiment or instruments in conditions that approximate space. One
 such platform is an avionics architecture called
-`uHAB <https://github.com/RIT-Space-Exploration/uHAB>`_, which is specifically
+`µHAB <https://github.com/RIT-Space-Exploration/µHAB>`_, which is specifically
 designed to be a robust and all-inclusive avionics package for HAB vehicles.
 The `Technology Readiness Level <https://esto.nasa.gov/technologists_trl.html>`_
-of uHAB is TRL 2 as of November 2018.
+of µHAB is TRL 2 as of November 2018.
 
 What is TerraMICRO?
 -------------------
 
 TerraMICRO is a high altitude balloon technology demonstration mission. The key
-objectives of this mission are to validate the uHAB avionics architecture,
+objectives of this mission are to validate the µHAB avionics architecture,
 experiment with core technologies which enable long duration flights, and
 collect high quality images from high altitudes. As a technology demonstrator,
 TerraMICRO flight systems designed to be generic in order to support any future
 missions. TerraHAB has selected long duration flights as a target for future
 missions, and as such many of the systems beyond the core avionics are building
-blocks toward this goal. At the time of launch, uHAB should be TRL 3, and upon
+blocks toward this goal. At the time of launch, µHAB should be TRL 3, and upon
 the successful completion of the TerraMICRO mission this architecture will be
 TRL 5.
