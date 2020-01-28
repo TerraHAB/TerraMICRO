@@ -85,7 +85,7 @@ As a stretch goal, instrument the bus with environmental sensors. Compare
 balloon internal conditions to ambient ones add correlate it with altitude rate
 of change or burst events.
 
-**Pairs with:** `Altitude Control`_, `Characterize Atmospheric Composition`_, 
+**Pairs with:** `Altitude Control`_, `Characterize Atmospheric Composition`_,
 `Model and Test Latex Balloon Burst Conditions`_
 
 On-board Image Processing
@@ -111,7 +111,7 @@ challenge, send commands from a ground station during the flight. For a simple
 demonstration, send limited health and status telemetry. As a stretch, send
 rich data (like photos or live video) to a ground station in flight.
 
-**Pairs with:** `Intra-balloon Environment Sensors`_, 
+**Pairs with:** `Intra-balloon Environment Sensors`_,
 `Characterize Atmospheric Composition`_, `Characterize Radiation Environment`_,
 `Altitude Control`_, `Stable Imaging Platform / Bus Attitude Control`_
 
@@ -185,7 +185,8 @@ experiments.
 Vegetation Density Mapper
 -------------------------
 
-*The spiritual successor to* `Where U At Plants?`_ *and Phil's vision for* `HAB CV`_.
+*The spiritual successor to* `Where U At Plants?`_ *and Phil's vision for* `HAB
+CV`_.
 
 .. _`Where U At Plants?`: https://github.com/RIT-Space-Exploration/hab-cv
 .. _`HAB CV`: https://github.com/RIT-Space-Exploration/SPEX-Project-Definition-Documents/blob/master/HAB-CV/hab-cv.pdf
@@ -201,9 +202,9 @@ payload cameras on the ground before flight.
 
 - `Vegetation Density Experiment`_: Record flight data (GPS coordinates,
   altitude, orientation) in sync with image captures. Use flight data, camera
-  field of view, and image data to project image data onto a map. Flight data and
-  imagery is stored to local memory. All data processing and analysis takes place
-  after flight data is recovered.
+  field of view, and image data to project image data onto a map. Flight data
+  and imagery is stored to local memory. All data processing and analysis takes
+  place after flight data is recovered.
 
 **Experiments (Level II):**
 
@@ -224,20 +225,20 @@ payload cameras on the ground before flight.
 Flight Conditions Characterizer
 -------------------------------
 
-*A knowledge-gathering mission to inform flight characteristics and 
+*A knowledge-gathering mission to inform flight characteristics and
 environments on future HAB flights.*
 
 Instrument the HAB bus to measure ambient conditions, internal conditions
 within the bus structure, and internal conditions within the balloon over a
 long-duration flight to gain detailed insights into the conditions subjected
-to the hardware. Calibrate all sensors on the ground in known conditions, 
+to the hardware. Calibrate all sensors on the ground in known conditions,
 ideally with an environmental test chamber, prior to the flight.
 
 **Experiments (Level I):**
 
 - `Characterize Atmospheric Composition`_: Measure temperature, humidity,
   pressure, and composition of the air over the course of the flight.
-  
+
 - `Characterize Radiation Environment`_: Measure ionizing radiation flux (using
   a geiger counter) over the course of the flight.
 
@@ -265,8 +266,9 @@ ideally with an environmental test chamber, prior to the flight.
 Flying Robot
 ------------
 
-*Develops key building blocks toward satellite-like operations tasks such as
-command and control, data links, and ACS systems (like detumbling).*
+*A knowledge-building mission that develops key building blocks toward
+satellite-like operations tasks such as command and control, data links, and
+ACS systems (like detumbling).*
 
 Send commands from a ground station that are executed by the HAB in flight.
 The HAB reacts to both command instructions and stimuli from its environment.
@@ -289,7 +291,6 @@ The HAB reacts to both command instructions and stimuli from its environment.
 - `Altitude Control`_: Maintain a set altitude in flight and change the
   altitude set point in response to a command from the ground station.
 
-- `Stable Imaging Platform / Bus Attitude Control`_: Maintain a set attitude 
-  (of the imaging platform) and change the target attitude in response to a 
+- `Stable Imaging Platform / Bus Attitude Control`_: Maintain a set attitude
+  (of the imaging platform) and change the target attitude in response to a
   command from the ground station.
-  
