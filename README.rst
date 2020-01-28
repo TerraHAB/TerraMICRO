@@ -11,9 +11,17 @@ Mission 1 of the TerraHAB Project.
 For Developers
 ==============
 
+.. warning::
+   The following steps are **Unix commands only.** If you are on a Windows
+   machine, I recommend installing a Linux distribution from the Windows App
+   Store (such as Ubuntu, which I have tested with this). Visual Studio Code
+   has sophisticated tools for developing on Windows Subsystem for Linux this
+   way.
+
 How to build the documentation locally
 --------------------------------------
-#. **Clone the repository.**
+
+#. **Clone this repository.**
 
    .. code-block:: shell
 
@@ -22,18 +30,18 @@ How to build the documentation locally
       git checkout -b your-new-branch
 
 
-#. **Install dependencies.**
+#. **Install Sphinx dependencies.**
 
    .. code-block:: shell
 
       pip install sphinx sphinx_rtd_theme
 
    I highly recommend using VS Code with the reStructuredText extension,
-   including its recommended additional extensions (such as a linter and such)
-   -- without this extension I wouldn't be able to figure out why things aren't
+   including its recommended additional extensions (a linter and such)---
+   without this extension I wouldn't be able to figure out why things aren't
    working you may also need to give the reStructuredText extension the
-   absolute path to sphinx on your machine. ``which sphinx-build`` will give
-   you the path.
+   absolute path to ``sphinx-build`` on your machine. The command ``which
+   sphinx-build`` will give you the path.
 
 
 #. **Get busy writing!**
@@ -46,5 +54,11 @@ How to build the documentation locally
 
 #. **Build the docs.**
 
-   Build the docs locally by going to the docs folder and executing ``make
-   html``
+   .. code-block:: shell
+
+      cd docs
+      make html
+
+   This compiles the reStructuredText (``.rst``) into HTML. View the rendered
+   docs by opening ``docs/_build/html/index.html`` in your browser or using
+   a VS Code extension preview window.
