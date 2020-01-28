@@ -66,13 +66,12 @@ end result should support at least one of these objectives.
      - Flight test uHAB as a flexible, expandable, and cost-effective platform
        to support many different mission profiles or payloads with all of the
        basics for a HAB launch included out of the box.
-       \cite{dans microhab design doc}
    * - **Open-Loop Altitude Regulation**
      - Limit maximum altitude and rate of ascent by the controlled release of
        helium during flight to prolong the mission duration. Maintain 75,000
        feet altitude for at least 30 minutes.
    * - **HD On-Board Video**
-     - Horizon-looking full color video at 1080p@30 fps or better (1080p @
+     - Horizon-looking full color video at 1080p @ 30 fps or better (1080p @
        60fps or 4K @ 30fps preferred).
    * - **Video Capture of Balloon Burst**
      - Capture the balloon burst event with minimum resolution of 720p @ 60fps
@@ -95,7 +94,7 @@ accomplish these goals.
      - Include externally accessible remove before flight pins to safe or
        disarm subsystems while on the ground, such as a power pin (included in
        uHAB), a startup sequence pin, a launch pin, and so on.
-   * - **Status Inticators & Displays**
+   * - **Status Indicators & Displays**
      - Include displays and self-test and status check codes to ensure that the
        balloon is stable and behaving nominally during testing, integration,
        and preparation for flight.
