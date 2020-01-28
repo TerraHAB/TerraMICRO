@@ -5,8 +5,8 @@ Design Requirements
 *******************
 
 TerraMICRO's technical design is driven by making engineering decisions to meet
-the design requirements listed in this section. All of the requirements here
-must be met before the mission takes flight, with test data to prove it.
+the design requirements listed in this section. All of these requirements must
+be met before the mission takes flight, with test data to prove it.
 
 By designing the vehicle to meet a set of requirements, we hold our engineering
 decisions accountable and resist the temptations of scope creep and "cool
@@ -16,6 +16,7 @@ When we, as a team, elect to override one of these requirements, we will commit
 to providing justification for doing so (even if the reason is *because we
 thought it would be more fun this way* or *because we couldn't afford to buy
 the parts needed to do it right.*)
+
 
 Critical Design Requirements
 ============================
@@ -84,8 +85,8 @@ Stretch Goals
 There are several design features that are specific requests from TerraHAB
 engineers. The flight system should meet these requests or provide
 justification for not including them. These features are not required for
-mission success as defined in _mission-reqs:, but it is
-expected that the TerraHAB team strives to accomplish these goals.
+mission success, but it is expected that the TerraHAB team strives to
+accomplish these goals.
 
 .. list-table:: Example Stretch Goals & Desired Features
    :header-rows: 0
@@ -122,26 +123,34 @@ vehicle's design.
    on the ground prior to launch. Flight data and telemetry recorded during the
    flight should be consistent with behavior observed during testing.
 
+
 Avionics
 --------
+
 
 Power
 -----
 
+
 Flight Software
 ---------------
+
 
 Telemetry
 ---------
 
+
 Recovery
 --------
+
 
 Payload Bus & Interfaces
 ------------------------
 
+
 Instruments & Sensors
 ---------------------
+
 
 Altitude Regulation
 -------------------

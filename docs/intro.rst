@@ -18,23 +18,22 @@ hobby projects.
 Why a High Altitude Balloon?
 ----------------------------
 
-High Altitude Balloons (HABs) are low-cost, relatively low-risk vehicles that
-are the perfect platform for conducting small scale atmospheric studies, remote
+High Altitude Balloons (HABs) are low-cost, low-risk vehicles that are the
+perfect platform for conducting small scale atmospheric studies, remote
 sensing, and other experiments that make use of the "edge of space" conditions
 found at altitudes in excess of 65,000 feet above sea level. Atmospheric
 conditions in the stratosphere are fairly well understood insofar as the
 humidity, temperatures, and pressures that must be weathered by a flight
 platform. More specifically, ambient temperatures and pressures between
-65,000--100,000, feet altitude see extremes of -60C and 0.05 atm
-respectively.
+65,000--100,000, feet altitude see extremes of -60C and 0.05 atm respectively.
 
-This opens the door to opportunities for generic or payload-agnostic HAB
-platforms designed to carry an experiment or instruments in conditions that
-approximate space. One such platform is an avionics architecture called uHAB,
-which is designed specifically to be a robust and all-inclusive avionics
-package for HAB vehicles. The `Technology Readiness Level
-<https://esto.nasa.gov/technologists_trl.html>`_ of uHAB is TRL 2 as of
-November 2018.
+This opens the door for generic or payload-agnostic HAB platforms designed to
+carry an experiment or instruments in conditions that approximate space. One
+such platform is an avionics architecture called
+`uHAB <https://github.com/RIT-Space-Exploration/uHAB>`_, which is specifically
+designed to be a robust and all-inclusive avionics package for HAB vehicles.
+The `Technology Readiness Level <https://esto.nasa.gov/technologists_trl.html>`_
+of uHAB is TRL 2 as of November 2018.
 
 What is TerraMICRO?
 -------------------
