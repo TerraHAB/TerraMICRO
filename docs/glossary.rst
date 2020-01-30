@@ -24,6 +24,8 @@ acronyms, initialisms, abbreviations, and so on
      - chord
    * - dt
      - time step
+   * - FSW
+     - Flight Software
    * - Fx
      - X component of the resultant pressure force acting on the vehicle
    * - Fy
