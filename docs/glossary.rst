@@ -3,38 +3,25 @@
 Glossary
 ========
 Definitions of common terms including units of measure, natural constants,
-acronyms, initialisms, abbreviations, and so on
+acronyms, initialisms, abbreviations, et cetera.
 
-.. list-table:: Definitions
+.. list-table::
    :header-rows: 1
 
    * - Parameter
      - Definition
-   * - A
-     - amplitude of oscillation
-   * - a
-     - cylinder diameter
-   * - C_p
-     - pressure coefficient
-   * - Cx
-     - force coefficient in the \textit{x} direction
-   * - Cy
-     - force coefficient in the \textit{y} direction
-   * - c
-     - chord
-   * - dt
-     - time step
+   * - FCC
+     - Federal Communications Commission
+   * - FAA
+     - Federal Aviation Administration
    * - FSW
      - Flight Software
-   * - Fx
-     - X component of the resultant pressure force acting on the vehicle
-   * - Fy
-     - Y component of the resultant pressure force acting on the vehicle
-   * - h
-     - height
-   * - i
-     - time index during navigation
-   * - j
-     - waypoint index
-   * - K
-     - trailing-edge (TE) nondimensional angular deflection rate
+   * - HAB
+     - High Altitude Balloon
+   * - RGB
+     - Red-Green-Blue, as in the `RGB color model <https://en.wikipedia.org/wiki/RGB_color_model>`_ 
+       which forms the basis of most modern imagers and displays.
+   * - NIR, VNIR
+     - Near-infrared spectrum, the spectral band that spans 700nm-1400nm.
+       Sometimes abbreviated as VNIR (Visible+Near-infrared) if referring to 
+       400nm-1400nm 
