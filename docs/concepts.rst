@@ -206,7 +206,32 @@ Send or receive data to the HAB in flight while it is beyond visual range. For
 a greater challenge, send or receive data while the HAB is beyond the
 geographical horizon of the ground station.
 
-**Pairs with:**
+**Pairs with:** `Real-time Data Transfer`_
+
+
+Multispectral / Hyperspectral Instrument
+----------------------------------------
+Image the Earth, sky, or atmospheric limb with a camera sensitive to two or
+more spectral bands. Optionally apply any of the following constraints:
+
+- Use components which cost no more than $50.
+- Calibrate the instrument on the ground (optionally in flight-like conditions)
+
+**Pairs with:** `Stable Imaging Platform / Bus Attitude Control`_,
+`On-board Image Processing`_, `Vegetation Density Experiment`_
+
+
+Star Tracker
+------------
+Build an instrument that measures position of the payload bus based on optical
+measurements of the sky. Optionally apply any of the following constraints:
+
+- Use components which cost no more than $50.
+- Calibrate the instrument on the ground (optionally in flight-like conditions)
+- Implement a custom algorithm to derive orientation from images of the sky.
+
+**Pairs with:** `Stable Imaging Platform / Bus Attitude Control`_,
+`On-board Image Processing`_
 
 
 -------------------------------------------------------------------------------
