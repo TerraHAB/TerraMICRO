@@ -1,5 +1,16 @@
 .. _concepts:
 
+.. ----------------------------------------------------------------------------
+.. -- Define substitutions here --
+
+.. |uHAB| replace:: µHAB
+.. Substitutes µHAB in place of |uHAB| when rendering this text.
+
+.. |F'| replace:: F´
+.. Substitutes µHAB in place of |uHAB| when rendering this text.
+
+.. ----------------------------------------------------------------------------
+
 ****************
 Mission Concepts
 ****************
@@ -169,21 +180,21 @@ challenge, do the image processing on-board.
 `On-board Image Processing`_
 
 
-F´ Flight Software Ecosystem
+F' Flight Software Ecosystem
 ----------------------------
-`F´ (F Prime) <https://github.com/nasa/fprime>`_ is a component-driven
+`F' (F Prime) <https://github.com/nasa/fprime>`_ is a component-driven
 framework that enables rapid development and deployment of spaceflight and
-other embedded software applications. F´ also has demos that are meant to be
+other embedded software applications. F' also has demos that are meant to be
 run on a Raspberry Pi.
 
-F´ can be used to create common HAB flight software leveraging existing
+F' can be used to create common HAB flight software leveraging existing
 components.  The team will create additional components to meet the needs of
 specific HABs, with the ability to open source for use by other HAB teams.
 
-- Run HAB FSW with F´ using a one off greedy customization, not going out of
+- Run HAB FSW with F' using a one off greedy customization, not going out of
   the way for code reuse.
-- Design HAB FSW with F´ to be common and for use by other HAB teams as a base.
-- Design hardware payloads with accompanying F´ components to be common for use
+- Design HAB FSW with F' to be common and for use by other HAB teams as a base.
+- Design hardware payloads with accompanying F' components to be common for use
   by teams that want a plug and play HAB payload.
 
 **Pairs with:**
