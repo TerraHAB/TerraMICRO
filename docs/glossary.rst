@@ -18,6 +18,8 @@ acronyms, initialisms, abbreviations, et cetera.
      - Flight Software
    * - HAB
      - High Altitude Balloon
+   * - Helmet
+     - An add-on module for the µHAB platform.
    * - RGB
      - Red-Green-Blue, as in the `RGB color model <https://en.wikipedia.org/wiki/RGB_color_model>`_
        which forms the basis of most modern imagers and displays.
