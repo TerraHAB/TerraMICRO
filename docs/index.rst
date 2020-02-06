@@ -18,6 +18,7 @@
    intro
    uhab
    concepts
+   concept-selection
    design-reqs
    glossary
 
