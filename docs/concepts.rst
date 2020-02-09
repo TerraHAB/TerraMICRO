@@ -232,8 +232,7 @@ constraints:
        University of Texas at Austin.
 
 .. [#] Smith, Casey Grant. 2017.
-       `Development and implementation of star tracker based attitude
-determination <https://scholarsmine.mst.edu/masters_theses/7724/?utm_source=scholarsmine.mst.edu%2Fmasters_theses%2F7724&utm_medium=PDF&utm_campaign=PDFCoverPages>`_.
+       `Development and implementation of star tracker based attitude determination <https://scholarsmine.mst.edu/masters_theses/7724/?utm_source=scholarsmine.mst.edu%2Fmasters_theses%2F7724&utm_medium=PDF&utm_campaign=PDFCoverPages>`_.
        Missouri University of Science and Technology.
 
 
