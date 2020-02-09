@@ -33,7 +33,7 @@ Stable Imaging Platform / Bus Attitude Control
 
 Active gimbals make for a (power hungry) off-the-shelf solution for image
 stabilization. For a challenge one could build a gimballed camera mount from
-scratch.
+scratch. [#]_
 
 A more novel idea would be to control bus attitude. A senior design team from
 2017 attempted to do attitude control with a reaction wheel, but I don't think
@@ -44,6 +44,9 @@ active ballast weights for anti-rocking control.
 
 **Pairs with:** `On-board Image Processing`_
 
+.. [#] Haumpton, Shane. 2018.
+       `How to create a DIY gimbal stabilizer <https://www.diyphotography.net/how-to-create-a-diy-gimbal-stabilizer/>`_.
+       DIY Photography.
 
 Altitude Control
 ----------------
@@ -214,7 +217,8 @@ more spectral bands. Optionally apply any of the following constraints:
 Star Tracker
 ------------
 Build an instrument that measures position of the payload bus based on optical
-measurements of the sky. Optionally apply any of the following constraints:
+measurements of the sky. [#]_ [#]_ Optionally apply any of the following
+constraints:
 
 - Use components which cost no more than $50.
 - Calibrate the instrument on the ground (optionally in flight-like conditions)
@@ -222,6 +226,15 @@ measurements of the sky. Optionally apply any of the following constraints:
 
 **Pairs with:** `Stable Imaging Platform / Bus Attitude Control`_,
 `On-board Image Processing`_
+
+.. [#] McBryde, Christopher Ryan. 2012.
+       `A star tracker design for CubeSats <https://repositories.lib.utexas.edu/handle/2152/ETD-UT-2012-05-4608>`_.
+       University of Texas at Austin.
+
+.. [#] Smith, Casey Grant. 2017.
+       `Development and implementation of star tracker based attitude
+determination <https://scholarsmine.mst.edu/masters_theses/7724/?utm_source=scholarsmine.mst.edu%2Fmasters_theses%2F7724&utm_medium=PDF&utm_campaign=PDFCoverPages>`_.
+       Missouri University of Science and Technology.
 
 
 Synthetic Image Quality Enhancement
@@ -241,15 +254,14 @@ either of the following methods:
        `Image Alignment and Stitching: A Tutorial <http://www.cs.toronto.edu/~kyros/courses/2530/papers/Lecture-14/Szeliski2006.pdf>`_.
        Foundations and Trends in Computer Graphics and Vision.
 
-
 .. [#] Nelson, Kyle, *et. al.* 2012.
        `Performance Evaluation of Multi-Frame Super-Resolution Algorithms <https://ieeexplore.ieee.org/abstract/document/6411669>`_.
        IEEE.
 
-
 .. [#] Farsiu, Sina, *et. al*. 2004.
        `Fast and robust multiframe super resolution <https://ieeexplore.ieee.org/abstract/document/1331445>`_.
        IEEE.
+
 
 -------------------------------------------------------------------------------
 
