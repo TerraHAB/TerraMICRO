@@ -56,7 +56,7 @@ greater challenge, extend the flight duration by controlling altitude. [#]_
 
 **Pairs with:** `Intra-balloon Environment Sensors`_
 
-.. [#] Sushko, Audrey, *et. al.* 2017.
+.. [#] Sushko, Audrey, *et al.* 2017.
        `Low Cost, High Endurance, Altitude-Controlled Latex Balloon for Near-Space Research (ValBal) <http://asl.stanford.edu/wp-content/papercite-data/pdf/Suskho.Tedjarati.ea.AERO2017.pdf>`_.
        Standford Space Initiative.
 
@@ -91,7 +91,7 @@ constraints:
 
 **Pairs with:** `Stable Imaging Platform / Bus Attitude Control`_
 
-.. [#] Linden, Philip, *et. al.* 2018.
+.. [#] Linden, Philip, *et al.* 2018.
        `On-Board Image Processing and Computer Vision Techniques on Low-Cost Consumer Electronics for Vegetation Density Mapping and Other Experiments <https://github.com/RIT-Space-Exploration/hab-cv/blob/master/reports/Project%20Definition%20Document/hab-cv.pdf>`_.
        RIT Space Exploration.
 
@@ -209,7 +209,7 @@ more spectral bands. Optionally apply any of the following constraints:
 **Pairs with:** `Stable Imaging Platform / Bus Attitude Control`_,
 `On-board Image Processing`_, `Vegetation Density Experiment`_
 
-.. [#] Sigernes, Fred, *et. al.*. 2018.
+.. [#] Sigernes, Fred, *et al.*. 2018.
        `Do it yourself hyperspectral imager for handheld to airborne operations <https://www.osapublishing.org/DirectPDFAccess/898DF890-994C-43DA-FBF0E930CF791000_382214/oe-26-5-6021.pdf>`_.
        Optics Express.
 
@@ -253,11 +253,11 @@ either of the following methods:
        `Image Alignment and Stitching: A Tutorial <http://www.cs.toronto.edu/~kyros/courses/2530/papers/Lecture-14/Szeliski2006.pdf>`_.
        Foundations and Trends in Computer Graphics and Vision.
 
-.. [#] Nelson, Kyle, *et. al.* 2012.
+.. [#] Nelson, Kyle, *et al.* 2012.
        `Performance Evaluation of Multi-Frame Super-Resolution Algorithms <https://ieeexplore.ieee.org/abstract/document/6411669>`_.
        IEEE.
 
-.. [#] Farsiu, Sina, *et. al*. 2004.
+.. [#] Farsiu, Sina, *et al.* 2004.
        `Fast and robust multiframe super resolution <https://ieeexplore.ieee.org/abstract/document/1331445>`_.
        IEEE.
 
@@ -274,6 +274,7 @@ This section outlines reference payloads and mission profiles for TerraMICRO
 which satisfy the main mission objective of demonstrating the uHAB avionics
 architecture by supporting a combination of technical or scientific
 experiments.
+
 
 Vegetation Density Mapper
 -------------------------
@@ -313,6 +314,10 @@ payload cameras on the ground before flight.
   and actuators (reaction mass, ballast, electric motors, thrust) to stabilize
   the platform where the payload cameras are mounted. In addition to control
   actuators, pointing knowledge is necessary to feed the control system.
+
+- `Synthetic Image Quality Enhancement`_: Use software and image processing
+  algorithms to enhance the swath and image quality beyond the camera's
+  physical performance capabilities.
 
 
 Flight Conditions Characterizer
@@ -387,3 +392,37 @@ The HAB reacts to both command instructions and stimuli from its environment.
 - `Stable Imaging Platform / Bus Attitude Control`_: Maintain a set attitude
   (of the imaging platform) and change the target attitude in response to a
   command from the ground station.
+
+
+Near Space Telescope
+--------------------
+
+*A novel mission that capitalizes on high altitude environments to do science.*
+
+Fit cameras to the HAB pointing outward toward space to take images that are
+less affected by atmospheric disturbances than an equivalent ground-based
+telescope. Use novel techniques to take high quality images of space with
+low-cost hardware and devices. Capture a higher quality image from the HAB than
+from a comparable ground-based system.
+
+**Experiments (Level I)**:
+
+- `Synthetic Image Quality Enhancement`_: Stitch images taken over the flight
+  into a wide area capture of the night sky.
+- `Characterize Atmospheric Composition`_: Measure temperature, humidity,
+  pressure, and composition of the air over the course of the flight.
+
+**Experiments (Level II)**:
+
+- `Star Tracker`_: Use Near-space conditions to demonstrate and evaluate the
+  performance of a custom star tracker system.
+
+**Experiments (Level III)**:
+
+- `Stable Imaging Platform / Bus Attitude Control`_: Use active control systems
+  and actuators (reaction mass, ballast, electric motors, thrust) to stabilize
+  the platform where the payload cameras are mounted. In addition to control
+  actuators, pointing knowledge is necessary to feed the control system.
+- `Synthetic Image Quality Enhancement`_: Use multi-frame super-resolution
+  algorithms to produce an image of higher quality than what is physically
+  capable from the camera system.
