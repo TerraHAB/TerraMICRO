@@ -49,9 +49,13 @@ Altitude Control
 ----------------
 Actively change the ascent or descent rate. For a simpler demonstration, only
 control the ascent rate. For a challenge, maintain an altitude set point. For a
-greater challenge, extend the flight duration by controlling altitude.
+greater challenge, extend the flight duration by controlling altitude. [#]_
 
 **Pairs with:** `Intra-balloon Environment Sensors`_
+
+.. [#] Sushko, Audrey, *et. al.* 2017.
+       `Low Cost, High Endurance, Altitude-Controlled Latex Balloon for Near-Space Research (ValBal) <http://asl.stanford.edu/wp-content/papercite-data/pdf/Suskho.Tedjarati.ea.AERO2017.pdf>`_.
+       Standford Space Initiative.
 
 
 Intra-balloon Environment Sensors
@@ -68,10 +72,11 @@ of change or burst events.
 **Pairs with:** `Altitude Control`_, `Characterize Atmospheric Composition`_,
 `Model and Test Latex Balloon Burst Conditions`_
 
+
 On-board Image Processing
 -------------------------
 Perform image processing (of any level) on images or video on the payload
-electronics in flight. For an extra challenge, apply any of the following
+electronics in flight. [#]_ For an extra challenge, apply any of the following
 constraints:
 
 - Payload electronics do not exceed $30.
@@ -82,6 +87,10 @@ constraints:
   sources.
 
 **Pairs with:** `Stable Imaging Platform / Bus Attitude Control`_
+
+.. [#] Linden, Philip, *et. al.* 2018.
+       `On-Board Image Processing and Computer Vision Techniques on Low-Cost Consumer Electronics for Vegetation Density Mapping and Other Experiments <https://github.com/RIT-Space-Exploration/hab-cv/blob/master/reports/Project%20Definition%20Document/hab-cv.pdf>`_.
+       RIT Space Exploration.
 
 
 Real-time Data Transfer
@@ -143,18 +152,22 @@ path using a parafoil or aero control surfaces.
 Vegetation Density Experiment
 -----------------------------
 Measure vegetation density using NDVI with cameras in flight. For a greater
-challenge, do the image processing on-board.
+challenge, do the image processing on-board. [#]_
 
 **Pairs with:** `Stable Imaging Platform / Bus Attitude Control`_,
 `On-board Image Processing`_
 
+.. [#] Linden, Philip. 2018.
+       `Where U At Plants? (WUAP): Capturing and Masking Images from Raspberry Pi 3 + Pi Camera <https://github.com/RIT-Space-Exploration/hab-cv>`_.
+       RIT Space Exploration.
+
 
 F' Flight Software Ecosystem
 ----------------------------
-`F' (F Prime) <https://github.com/nasa/fprime>`_ is a component-driven
-framework that enables rapid development and deployment of spaceflight and
-other embedded software applications. F' also has demos that are meant to be
-run on a Raspberry Pi.
+F' (F Prime) is a component-driven framework that enables rapid development and
+deployment of spaceflight and other embedded software applications. [#]_ F' is
+part of NASA Jet Propultion Lab's technology ecosystem, open source, and also
+has demos that are meant to be run on a Raspberry Pi.
 
 F' can be used to create common HAB flight software leveraging existing
 components.  The team will create additional components to meet the needs of
@@ -167,6 +180,10 @@ specific HABs, with the ability to open source for use by other HAB teams.
   by teams that want a plug and play HAB payload.
 
 **Pairs with:**
+
+.. [#] NASA Jet Propulsion Lab. 2020.
+       `F´: A Flight-Proven, Multi-Platform, Open-Source Flight Software Framework <https://github.com/nasa/fprime>`_.
+       GitHub.
 
 
 Long Distance Communications
@@ -183,11 +200,15 @@ Multispectral / Hyperspectral Instrument
 Image the Earth, sky, or atmospheric limb with a camera sensitive to two or
 more spectral bands. Optionally apply any of the following constraints:
 
-- Use components which cost no more than $50.
+- Use components which cost no more than $50. [#]_
 - Calibrate the instrument on the ground (optionally in flight-like conditions)
 
 **Pairs with:** `Stable Imaging Platform / Bus Attitude Control`_,
 `On-board Image Processing`_, `Vegetation Density Experiment`_
+
+.. [#] Sigernes, Fred, *et. al.*. 2018.
+       `Do it yourself hyperspectral imager for handheld to airborne operations <https://www.osapublishing.org/DirectPDFAccess/898DF890-994C-43DA-FBF0E930CF791000_382214/oe-26-5-6021.pdf>`_.
+       Optics Express.
 
 
 Star Tracker
@@ -202,6 +223,33 @@ measurements of the sky. Optionally apply any of the following constraints:
 **Pairs with:** `Stable Imaging Platform / Bus Attitude Control`_,
 `On-board Image Processing`_
 
+
+Synthetic Image Quality Enhancement
+-----------------------------------
+Use computer vision techniques to improve the effective resolution of images by
+either of the following methods:
+
+#. Stitch multiple image frames into a larger composite image of an area wider
+   than the camera's field of view. [#]_
+#. Use multi-frame super-resolution algorithms to create high resolution image
+   products from low resolution images captured in flight. [#]_ [#]_
+
+**Pairs with**: `Stable Imaging Platform / Bus Attitude Control`_,
+`On-board Image Processing`_
+
+.. [#] Szeliski, Richard. 2006.
+       `Image Alignment and Stitching: A Tutorial <http://www.cs.toronto.edu/~kyros/courses/2530/papers/Lecture-14/Szeliski2006.pdf>`_.
+       Foundations and Trends in Computer Graphics and Vision.
+
+
+.. [#] Nelson, Kyle, *et. al.* 2012.
+       `Performance Evaluation of Multi-Frame Super-Resolution Algorithms <https://ieeexplore.ieee.org/abstract/document/6411669>`_.
+       IEEE.
+
+
+.. [#] Farsiu, Sina, *et. al*. 2004.
+       `Fast and robust multiframe super resolution <https://ieeexplore.ieee.org/abstract/document/1331445>`_.
+       IEEE.
 
 -------------------------------------------------------------------------------
 
