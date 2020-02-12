@@ -4,7 +4,13 @@
 TerraMICRO
 ##########
 
-Mission 1 of the TerraHAB Project.
+*Mission 1 of the TerraHAB Project.*
+
+TerraMICRO is a high altitude balloon technology demonstration mission. The key
+objectives of this mission are to validate the `µHAB avionics architecture
+<https://github.com/RIT-Space-Exploration/uHAB>`_, experiment with core
+technologies which enable long duration flights, and collect high quality
+images from high altitudes.
 
 ----------------------------------
 
@@ -34,12 +40,12 @@ How to build the documentation locally
 
    .. code-block:: shell
 
-      pip install sphinx sphinx_rtd_theme
+      pip install -r docs/requirements.txt
 
-   I highly recommend using VS Code with the reStructuredText extension,
-   including its recommended additional extensions (a linter and such)---
-   without this extension I wouldn't be able to figure out why things aren't
-   working you may also need to give the reStructuredText extension the
+   I highly recommend using Visual Studio Code with the reStructuredText
+   extension, including its recommended additional extensions (a linter and
+   such)--- without this extension I wouldn't be able to figure out why things
+   aren't working you may also need to give the reStructuredText extension the
    absolute path to ``sphinx-build`` on your machine. The command ``which
    sphinx-build`` will give you the path.
 
