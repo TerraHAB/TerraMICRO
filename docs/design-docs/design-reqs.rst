@@ -125,7 +125,10 @@ vehicle's design.
 
 Avionics
 --------
+Since |uHAB| serves as the core avionics platform for TerraMICRO, avionics
+requirements are inherited from |uHAB| requirements.
 
+.. include:: uhab-reqs.rst
 
 Power
 -----

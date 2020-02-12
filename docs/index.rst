@@ -16,10 +16,9 @@
    :caption: Contents:
 
    intro
-   uhab
    concepts
    concept-selection
-   design-reqs
+   design-docs/design-reqs
    glossary
 
 
