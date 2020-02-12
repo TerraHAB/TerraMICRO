@@ -64,6 +64,11 @@ for more expansion.
 
 List of Experiment Ideas
 ========================
+To demonstrate |uHAB| in a real-world use-case, TerraMICRO will feature one
+or more experiments. Experiments are either technical or scientific, and
+span the full gamut of engineering fields of study. This section lists some
+experiments that could be incorporated into TerraMICRO.
+
 
 Stable Imaging Platform / Bus Attitude Control
 ----------------------------------------------
