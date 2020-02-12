@@ -12,7 +12,9 @@ objectives of this mission are to validate the `µHAB avionics architecture
 technologies which enable long duration flights, and collect high quality
 images from high altitudes.
 
-----------------------------------
+Documentation is available at `terrahab.github.io/TerraMICRO <https://terrahab.github.io/TerraMICRO>`_
+
+-------------------------------------------------------------------------------
 
 For Developers
 ==============
