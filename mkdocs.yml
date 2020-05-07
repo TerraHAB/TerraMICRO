@@ -1,0 +1,14 @@
+site_name: TerraMICRO
+nav:
+  - Introduction: index.md
+  - μHAB Architecture: uhab.md
+  - Mission Concepts: concepts.md
+  - Concept Selection: concept-selection.md
+  - Design Requirements: design-reqs.md
+  - Glossary: glossary.md
+
+theme: readthedocs
+markdown_extensions:
+  - toc
+  - admonition
+  - footnotes
