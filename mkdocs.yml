@@ -1,0 +1,16 @@
+site_name: TerraMICRO
+nav:
+  - Introduction: index.md
+  - Mission Concepts: concepts.md
+  - Concept Selection: concept-selection.md
+  - Design Requirements: design-reqs.md
+  - Glossary: glossary.md
+  - Contribute: contribute.md
+
+theme: readthedocs
+markdown_extensions:
+  - toc
+  - admonition
+  - footnotes
+extra_javascript:
+  - js/extra.js

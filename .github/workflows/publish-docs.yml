@@ -1,0 +1,19 @@
+name: Publish Docs via GitHub Pages
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Deploy Docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v2
+
+      - name: Deploy docs
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CUSTOM_DOMAIN: terrahab.github.io
