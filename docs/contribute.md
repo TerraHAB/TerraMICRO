@@ -1,5 +1,8 @@
 # Contribute to documentation
 
+Edit the docs as Markdown files, then use `mkdocs` to preview them in your
+browser.
+
 ```bash
 pip install mkdocs
 ```

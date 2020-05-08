@@ -1,7 +1,6 @@
 site_name: TerraMICRO
 nav:
   - Introduction: index.md
-  - μHAB Architecture: uhab.md
   - Mission Concepts: concepts.md
   - Concept Selection: concept-selection.md
   - Design Requirements: design-reqs.md
@@ -12,3 +11,5 @@ markdown_extensions:
   - toc
   - admonition
   - footnotes
+extra_javascript:
+  - js/extra.js

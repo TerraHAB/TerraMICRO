@@ -21,8 +21,7 @@ key design requirements in order to achieve mission success. These
 requirements serve as success criteria and also as constraints to the
 design trade space.
 
-Some requirements are non-negotiable, such as [FCC or FAA
-regulations](https://www.ecfr.gov/cgi-bin/text-idx?rgn=div5&node=14:2.0.1.3.15#sp14.2.101.d)
+Some requirements are non-negotiable, such as [FCC or FAA regulations](https://www.ecfr.gov/cgi-bin/text-idx?rgn=div5&node=14:2.0.1.3.15#sp14.2.101.d)
 for unmanned free balloons and other basic functions to ensure a safe,
 controlled flight. Other requirements may come from limitations related
 to cost, manufacturability, which stem from the TerraHAB organization's

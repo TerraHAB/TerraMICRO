@@ -6,6 +6,39 @@ or scientific experiments. These experiments need not be related to
 uHAB---they serve as a means to validate the design and architecture
 while stressing the system in a real-world use case.
 
+## μHAB Architecture
+
+!!! note
+    μHAB is under active development. Visit the project's GitHub page for
+    [µHAB designs and documentation](https://github.com/RIT-Space-Exploration/uHAB).
+
+The purpose of μHAB is to provide a flexible, expandable, and affordable
+platform that contains all of the necessary functionality for a
+high-altitude balloon mission without the hassle of starting a
+completely new design from scratch.
+
+**Flexible**: μHAB contains a wealth of available I/O that is broken out
+to easily accessible headers. Both 5V and 3.3V digital pins are
+available for ease of future component integrations. The powerful
+300MHz, 32-bit microcontroller has capabilities for CANbus, EBI/EMI,
+Ethernet, I²C, IrDA, LINbus, MMC/SD/SDIO, QSPI, SPI, SSC, UART/USART,
+USB, x24 16-bit ADC (with oversampling), and x2 12-bit DAC. μHAB also
+features selection headers for multiple types of antennas and
+remove-before-flight safes.
+
+**Expandable**: The layout of the PCB includes the familiar pinout of
+the common Arduino Mega so that commercial Arduino shields may be
+utilized. Additional I/O is available separately. The microcontroller
+selected offers enough processing power to handle many more additional
+tasks and the available power supply allows for some limited draw for
+future expansion modules called *helmets*.
+
+**Affordable**: μHAB will contain only the components necessary for a
+successful mission as outlined below. Extra functionality will be
+available in the form of completely separate additional *helmets* as
+needed. By reducing the functionality to a minimum, μHAB lowers the
+overall costs associated for a HAB launch and allows for more expansion.
+
 ## List of Experiment Ideas
 
 ### Stable Imaging Platform / Bus Attitude Control
@@ -22,7 +55,7 @@ counteract wind forces. A simpler objective could be using drone
 propellers for anti-spin control or active ballast weights for
 anti-rocking control.
 
-**Pairs with:** [On-board Image Processing]()
+**Pairs with:** [On-board Image Processing](#on-board-image-processing)
 
 ### Altitude Control
 
@@ -31,7 +64,7 @@ only control the ascent rate. For a challenge, maintain an altitude set
 point. For a greater challenge, extend the flight duration by
 controlling altitude.[^2]
 
-**Pairs with:** [Intra-balloon Environment Sensors]()
+**Pairs with:** [Intra-balloon Environment Sensors](#intra-balloon-environment-sensors)
 
 ### Intra-balloon Environment Sensors
 
@@ -44,8 +77,7 @@ As a stretch goal, instrument the bus with environmental sensors.
 Compare balloon internal conditions to ambient ones add correlate it
 with altitude rate of change or burst events.
 
-**Pairs with:** [Altitude Control](), [Characterize Atmospheric
-Composition](), [Model and Test Latex Balloon Burst Conditions]()
+**Pairs with:** [Altitude Control](#altitude-control), [Characterize Atmospheric Composition](#characterize-atmospheric-composition), [Model and Test Latex Balloon Burst Conditions](#model-and-test-latex-balloon-burst-conditions)
 
 ### On-board Image Processing
 
@@ -58,7 +90,7 @@ the following constraints:
 - Image processing takes place on an FPGA. Bonus if it occurs in realtime.
 - Image processing includes data fusion with additional sensors orcamera sources.
 
-**Pairs with:** [Stable Imaging Platform / Bus Attitude Control]()
+**Pairs with:** [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control)
 
 ### Real-time Data Transfer
 
@@ -68,9 +100,11 @@ simple demonstration, send limited health and status telemetry. As a
 stretch, send rich data (like photos or live video) to a ground station
 in flight.
 
-**Pairs with:** [Intra-balloon Environment Sensors](), [Characterize
-Atmospheric Composition](), [Characterize Radiation Environment](),
-[Altitude Control](), [Stable Imaging Platform / Bus Attitude Control]()
+**Pairs with:** [Intra-balloon Environment Sensors](#intra-balloon-environment-sensors),
+[Characterize Atmospheric Composition](#characterize-atmospheric-composition),
+[Characterize Radiation Environment](#characterize-radiation-environment),
+[Altitude Control](#altitude-control), 
+[Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control)
 
 ### Characterize Atmospheric Composition
 
@@ -80,7 +114,7 @@ multiple flights to see how composition changes with altitude from
 different geographic locations, time of day, time of year, or different
 weather conditions.
 
-**Pairs with:** [Altitude Control](), [Intra-balloon Environment Sensors]()
+**Pairs with:** [Altitude Control](#altitude-control), [Intra-balloon Environment Sensors](#intra-balloon-environment-sensors)
 
 ### Characterize Radiation Environment
 
@@ -90,7 +124,7 @@ flights to see how intensity changes with altitude from different
 geographic locations, time of day, time of year, or different weather
 conditions.
 
-**Pairs with:** [Altitude Control](), [Intra-balloon Environment Sensors]()
+**Pairs with:** [Altitude Control](#altitude-control), [Intra-balloon Environment Sensors](#intra-balloon-environment-sensors)
 
 ### Model and Test Latex Balloon Burst Conditions
 
@@ -104,7 +138,7 @@ For an extra challenge, apply any of the following constraints:
   and a sub- or full-scale balloon.
 - Record high-speed video of the balloon bursting in flight.
 
-**Pairs with:** [Intra-balloon Environment Sensors]()
+**Pairs with:** [Intra-balloon Environment Sensors](#intra-balloon-environment-sensors)
 
 ### Controlled Descent
 
@@ -119,8 +153,8 @@ descent path using a parafoil or aero control surfaces.
 Measure vegetation density using NDVI with cameras in flight. For a
 greater challenge, do the image processing on-board.[^4]
 
-**Pairs with:** [Stable Imaging Platform / Bus Attitude Control](),
-[On-board Image Processing]()
+**Pairs with:** [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control),
+[On-board Image Processing](#on-board-image-processing)
 
 ### F' Flight Software Ecosystem
 
@@ -150,7 +184,7 @@ Send or receive data to the HAB in flight while it is beyond visual
 range. For a greater challenge, send or receive data while the HAB is
 beyond the geographical horizon of the ground station.
 
-**Pairs with:** [Real-time Data Transfer]()
+**Pairs with:** [Real-time Data Transfer](#real-time-data-transfer)
 
 ### Multispectral / Hyperspectral Instrument
 
@@ -162,8 +196,8 @@ constraints:
 - Calibrate the instrument on the ground (optionally in flight-like
   conditions)
 
-**Pairs with:** [Stable Imaging Platform / Bus Attitude Control](),
-[On-board Image Processing](), [Vegetation Density Experiment]()
+**Pairs with:** [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control),
+[On-board Image Processing](#on-board-image-processing), [Vegetation Density Experiment](#vegetation-density-experiment)
 
 ### Star Tracker
 
@@ -177,8 +211,8 @@ following constraints:
 - Implement a custom algorithm to derive orientation from images of
   the sky.
 
-**Pairs with:** [Stable Imaging Platform / Bus Attitude Control](),
-[On-board Image Processing]()
+**Pairs with:** [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control),
+[On-board Image Processing](#on-board-image-processing)
 
 ### Synthetic Image Quality Enhancement
 
@@ -191,8 +225,8 @@ images by either of the following methods:
    resolution image products from low resolution images captured in
    flight.[^10][^11]
 
-**Pairs with**: [Stable Imaging Platform / Bus Attitude Control](),
-[On-board Image Processing]()
+**Pairs with**: [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control),
+[On-board Image Processing](#on-board-image-processing)
 
 ------------------------------------------------------------------------
 
@@ -219,7 +253,7 @@ all payload cameras on the ground before flight.
 
 **Experiments (Level I):**
 
-- [Vegetation Density Experiment](): Record flight data (GPS
+- [Vegetation Density Experiment](#vegetation-density-experiment): Record flight data (GPS
   coordinates, altitude, orientation) in sync with image captures. Use
   flight data, camera field of view, and image data to project image
   data onto a map. Flight data and imagery is stored to local memory.
@@ -228,15 +262,15 @@ all payload cameras on the ground before flight.
 
 **Experiments (Level II):**
 
-- [On-board Image Processing](): Perform data processing (linking
+- [On-board Image Processing](#on-board-image-processing): Perform data processing (linking
   flight data to imagery) and analysis (compute NDVI) on-board during
   the flight.
-- [Real-time Data Transfer](): Downlink all or part of the data to a
+- [Real-time Data Transfer](#real-time-data-transfer): Downlink all or part of the data to a
   ground station while in flight.
 
 **Experiments (Level III):**
 
-- [Stable Imaging Platform / Bus Attitude Control](): Use active
+- [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control): Use active
   control systems and actuators (reaction mass, ballast, electric
   motors, thrust) to stabilize the platform where the payload cameras
   are mounted. In addition to control actuators, pointing knowledge is
@@ -256,28 +290,28 @@ prior to the flight.
 
 **Experiments (Level I):**
 
-- [Characterize Atmospheric Composition](): Measure temperature,
+- [Characterize Atmospheric Composition](#characterize-atmospheric-composition): Measure temperature,
   humidity, pressure, and composition of the air over the course of
   the flight.
-- [Characterize Radiation Environment](): Measure ionizing radiation
+- [Characterize Radiation Environment](#characterize-radiation-environment): Measure ionizing radiation
   flux (using a geiger counter) over the course of the flight.
 
 **Experiments (Level II):**
 
-- [Intra-balloon Environment Sensors](): Measure temperature,
+- [Intra-balloon Environment Sensors](#intra-balloon-environment-sensors): Measure temperature,
   humidity, pressure and density of helium within the balloon. Also
   measure detailed thermal gradients throughout the payload bus and
   components.
-- [Real-time Data Transfer](): Downlink all or part of the data to a
+- [Real-time Data Transfer](#real-time-data-transfer): Downlink all or part of the data to a
   ground station while in flight.
-- [Model and Test Latex Balloon Burst Conditions](): Model and test
+- [Model and Test Latex Balloon Burst Conditions](#model-and-test-latex-balloon-burst-conditions): Model and test
   (on the ground) the conditions that lead to the balloon's burst
   event. Instrument the balloon and payload to validate this model and
   characterize the burst event in detail.
 
 **Experiments (Level III):**
 
-- [Altitude Control](): Maintain flight at certain altitude(s) to gain
+- [Altitude Control](#altitude-control): Maintain flight at certain altitude(s) to gain
   more data about the conditions at that height in order to smooth out
   outliers and variations. Optionally extend mission flight time to
   gain more data.
@@ -294,24 +328,24 @@ environment.
 
 **Experiments (Level I):**
 
-- [Real-time Data Transfer](): Downlink all or part of the data to a
+- [Real-time Data Transfer](#real-time-data-transfer): Downlink all or part of the data to a
   ground station while in flight. Execute commands sent from a ground
   station and report acknowledgement of a received command to the
   ground.
 
 **Experiments (Level II):**
 
-- [Controlled Descent](): Automatically detect a free-fall state and
+- [Controlled Descent](#controlled-descent): Automatically detect a free-fall state and
   use active controls and actuators (parafoil, control surfaces) to
   change the speed and direction of descent. Descent should be
   controlled in a way that makes recovery of the payload easier.
 
 **Experiments (Level III):**
 
-- [Altitude Control](): Maintain a set altitude in flight and change
+- [Altitude Control](#altitude-control): Maintain a set altitude in flight and change
   the altitude set point in response to a command from the ground
   station.
-- [Stable Imaging Platform / Bus Attitude Control](): Maintain a set
+- [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control): Maintain a set
   attitude (of the imaging platform) and change the target attitude in
   response to a command from the ground station.
 
