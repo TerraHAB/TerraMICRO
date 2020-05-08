@@ -1,6 +1,12 @@
 # TerraMICRO
 
-Mission 1 of the TerraHAB Project.
+This is the documentation homepage for TerraMICRO, Mission 1 of the TerraHAB
+Project.
+
+The documentation here logs our ideas, designs, and decisions through the
+design process from concept selection to post-flight analysis.
+
+GitHub: [github.com/TerraHAB/TerraMICRO](https://github.com/TerraHAB/TerraMICRO)
 
 ## What is TerraHAB?
 
