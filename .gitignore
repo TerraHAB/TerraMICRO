@@ -193,3 +193,9 @@ TSWLatexianTemp*
 
 # Sphinx
 docs/_build
+
+# virtualenv
+venv
+
+# mkdocs
+site/
