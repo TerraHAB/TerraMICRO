@@ -55,7 +55,8 @@ counteract wind forces. A simpler objective could be using drone
 propellers for anti-spin control or active ballast weights for
 anti-rocking control.
 
-**Pairs with:** [On-board Image Processing](#on-board-image-processing)
+**Pairs with:** [On-board Image Processing](#on-board-image-processing),
+[Rocket Technology Testbed](#rocket-technology-testbed)
 
 ### Altitude Control
 
@@ -77,7 +78,9 @@ As a stretch goal, instrument the bus with environmental sensors.
 Compare balloon internal conditions to ambient ones add correlate it
 with altitude rate of change or burst events.
 
-**Pairs with:** [Altitude Control](#altitude-control), [Characterize Atmospheric Composition](#characterize-atmospheric-composition), [Model and Test Latex Balloon Burst Conditions](#model-and-test-latex-balloon-burst-conditions)
+**Pairs with:** [Altitude Control](#altitude-control),
+[Characterize Atmospheric Composition](#characterize-atmospheric-composition),
+[Model and Test Latex Balloon Burst Conditions](#model-and-test-latex-balloon-burst-conditions)
 
 ### On-board Image Processing
 
@@ -86,7 +89,8 @@ payload electronics in flight.[^3] For an extra challenge, apply any of
 the following constraints:
 
 - Payload electronics do not exceed \$30.
-- Image processing algorithms have a practical or scientific usebeyond a simple demonstrator.
+- Image processing algorithms have a practical or scientific usebeyond a simple
+  demonstrator.
 - Image processing takes place on an FPGA. Bonus if it occurs in realtime.
 - Image processing includes data fusion with additional sensors orcamera sources.
 
@@ -104,7 +108,8 @@ in flight.
 [Characterize Atmospheric Composition](#characterize-atmospheric-composition),
 [Characterize Radiation Environment](#characterize-radiation-environment),
 [Altitude Control](#altitude-control), 
-[Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control)
+[Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control),
+[Rocket Technology Testbed](#rocket-technology-testbed)
 
 ### Characterize Atmospheric Composition
 
@@ -114,7 +119,8 @@ multiple flights to see how composition changes with altitude from
 different geographic locations, time of day, time of year, or different
 weather conditions.
 
-**Pairs with:** [Altitude Control](#altitude-control), [Intra-balloon Environment Sensors](#intra-balloon-environment-sensors)
+**Pairs with:** [Altitude Control](#altitude-control),
+[Intra-balloon Environment Sensors](#intra-balloon-environment-sensors)
 
 ### Characterize Radiation Environment
 
@@ -124,7 +130,8 @@ flights to see how intensity changes with altitude from different
 geographic locations, time of day, time of year, or different weather
 conditions.
 
-**Pairs with:** [Altitude Control](#altitude-control), [Intra-balloon Environment Sensors](#intra-balloon-environment-sensors)
+**Pairs with:** [Altitude Control](#altitude-control),
+[Intra-balloon Environment Sensors](#intra-balloon-environment-sensors)
 
 ### Model and Test Latex Balloon Burst Conditions
 
@@ -146,7 +153,7 @@ After balloon cutdown, control the descent of the payload. For a simpler
 challenge, use a reefed parachute. For a greater challenge, steer the
 descent path using a parafoil or aero control surfaces.
 
-**Pairs with:**
+**Pairs with:** [Rocket Technology Testbed](#rocket-technology-testbed)
 
 ### Vegetation Density Experiment
 
@@ -176,7 +183,7 @@ teams.
 - Design hardware payloads with accompanying F' components to be
   common for use by teams that want a plug and play HAB payload.
 
-**Pairs with:**
+**Pairs with:** 
 
 ### Long Distance Communications
 
@@ -197,7 +204,8 @@ constraints:
   conditions)
 
 **Pairs with:** [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control),
-[On-board Image Processing](#on-board-image-processing), [Vegetation Density Experiment](#vegetation-density-experiment)
+[On-board Image Processing](#on-board-image-processing),
+[Vegetation Density Experiment](#vegetation-density-experiment)
 
 ### Star Tracker
 
@@ -228,7 +236,21 @@ images by either of the following methods:
 **Pairs with**: [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control),
 [On-board Image Processing](#on-board-image-processing)
 
-------------------------------------------------------------------------
+### Mission Monitoring Ground Station
+
+Monitor telemetry in flight or during tests and display telemetry and other
+information with an intuitive user interface. For a greater challenge, also
+implement command and control elements. Examples of UI elements that could be
+used are:
+
+- Live-updating plots of telemetry values over time
+- Live-updating log messages from the avionics
+- Live video feeds from cameras on board
+- Command and control interfaces for sending messages to the vehicle
+
+**Pairs with:** [Real-time Data Transfer](#real-time-data-transfer)
+
+-------------------------------------------------------------------------------
 
 ## Reference Missions
 
@@ -253,28 +275,27 @@ all payload cameras on the ground before flight.
 
 **Experiments (Level I):**
 
-- [Vegetation Density Experiment](#vegetation-density-experiment): Record flight data (GPS
-  coordinates, altitude, orientation) in sync with image captures. Use
-  flight data, camera field of view, and image data to project image
-  data onto a map. Flight data and imagery is stored to local memory.
-  All data processing and analysis takes place after flight data is
-  recovered.
+- [Vegetation Density Experiment](#vegetation-density-experiment): Record
+  flight data (GPS coordinates, altitude, orientation) in sync with image
+  captures. Use flight data, camera field of view, and image data to project
+  image data onto a map. Flight data and imagery is stored to local memory. All
+  data processing and analysis takes place after flight data is recovered.
 
 **Experiments (Level II):**
 
-- [On-board Image Processing](#on-board-image-processing): Perform data processing (linking
-  flight data to imagery) and analysis (compute NDVI) on-board during
-  the flight.
-- [Real-time Data Transfer](#real-time-data-transfer): Downlink all or part of the data to a
-  ground station while in flight.
+- [On-board Image Processing](#on-board-image-processing): Perform data
+  processing (linking flight data to imagery) and analysis (compute NDVI)
+  on-board during the flight.
+- [Real-time Data Transfer](#real-time-data-transfer): Downlink all or part of
+  the data to a ground station while in flight.
 
 **Experiments (Level III):**
 
-- [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control): Use active
-  control systems and actuators (reaction mass, ballast, electric
-  motors, thrust) to stabilize the platform where the payload cameras
-  are mounted. In addition to control actuators, pointing knowledge is
-  necessary to feed the control system.
+- [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control): 
+  Use active control systems and actuators (reaction mass, ballast, electric
+  motors, thrust) to stabilize the platform where the payload cameras are
+  mounted. In addition to control actuators, pointing knowledge is necessary to
+  feed the control system.
 
 ### Flight Conditions Characterizer
 
@@ -290,31 +311,32 @@ prior to the flight.
 
 **Experiments (Level I):**
 
-- [Characterize Atmospheric Composition](#characterize-atmospheric-composition): Measure temperature,
-  humidity, pressure, and composition of the air over the course of
+- [Characterize Atmospheric Composition](#characterize-atmospheric-composition): 
+  Measure temperature, humidity, pressure, and composition of the air over the
+  course of the flight.
+- [Characterize Radiation Environment](#characterize-radiation-environment):
+  Measure ionizing radiation flux (using a geiger counter) over the course of
   the flight.
-- [Characterize Radiation Environment](#characterize-radiation-environment): Measure ionizing radiation
-  flux (using a geiger counter) over the course of the flight.
 
 **Experiments (Level II):**
 
-- [Intra-balloon Environment Sensors](#intra-balloon-environment-sensors): Measure temperature,
-  humidity, pressure and density of helium within the balloon. Also
-  measure detailed thermal gradients throughout the payload bus and
-  components.
+- [Intra-balloon Environment Sensors](#intra-balloon-environment-sensors): 
+  Measure temperature, humidity, pressure and density of helium within the
+  balloon. Also measure detailed thermal gradients throughout the payload bus
+  and components.
 - [Real-time Data Transfer](#real-time-data-transfer): Downlink all or part of the data to a
   ground station while in flight.
-- [Model and Test Latex Balloon Burst Conditions](#model-and-test-latex-balloon-burst-conditions): Model and test
-  (on the ground) the conditions that lead to the balloon's burst
-  event. Instrument the balloon and payload to validate this model and
+- [Model and Test Latex Balloon Burst Conditions](#model-and-test-latex-balloon-burst-conditions):
+  Model and test (on the ground) the conditions that lead to the balloon's
+  burst event. Instrument the balloon and payload to validate this model and
   characterize the burst event in detail.
 
 **Experiments (Level III):**
 
-- [Altitude Control](#altitude-control): Maintain flight at certain altitude(s) to gain
-  more data about the conditions at that height in order to smooth out
-  outliers and variations. Optionally extend mission flight time to
-  gain more data.
+- [Altitude Control](#altitude-control): Maintain flight at certain altitude(s)
+  to gain more data about the conditions at that height in order to smooth out
+  outliers and variations. Optionally extend mission flight time to gain more
+  data.
 
 ### Flying Robot
 
@@ -328,26 +350,61 @@ environment.
 
 **Experiments (Level I):**
 
-- [Real-time Data Transfer](#real-time-data-transfer): Downlink all or part of the data to a
-  ground station while in flight. Execute commands sent from a ground
-  station and report acknowledgement of a received command to the
+- [Real-time Data Transfer](#real-time-data-transfer): Downlink all or part
+  of the data to a ground station while in flight. Execute commands sent from a
+  ground station and report acknowledgement of a received command to the
   ground.
 
 **Experiments (Level II):**
 
-- [Controlled Descent](#controlled-descent): Automatically detect a free-fall state and
-  use active controls and actuators (parafoil, control surfaces) to
-  change the speed and direction of descent. Descent should be
-  controlled in a way that makes recovery of the payload easier.
+- [Controlled Descent](#controlled-descent): Automatically detect a free-fall
+  state and use active controls and actuators (parafoil, control surfaces) to
+  change the speed and direction of descent. Descent should be controlled in a
+  way that makes recovery of the payload easier.
 
 **Experiments (Level III):**
 
-- [Altitude Control](#altitude-control): Maintain a set altitude in flight and change
-  the altitude set point in response to a command from the ground
+- [Altitude Control](#altitude-control): Maintain a set altitude in flight and
+  change the altitude set point in response to a command from the ground
   station.
-- [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control): Maintain a set
-  attitude (of the imaging platform) and change the target attitude in
-  response to a command from the ground station.
+- [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control): 
+  Maintain a set attitude (of the imaging platform) and change the target
+  attitude in response to a command from the ground station.
+
+### Rocket Technology Testbed
+*A technology demonstration mission for key technologies meant for use with
+rockets.*
+
+Develop avionics, logic, and other foundational technologies for controls,
+telemetry, and ground stations using requirements based on what would be used
+in an M-class hobby rocket. Select experiments that can be demonstrated on a
+HAB and easily adapted for flight in a rocket.
+
+**Experiments (Level I):**
+
+- [Real-time Data Transfer](#real-time-data-transfer): Downlink all or part of
+  the data to a ground station while in flight.
+
+**Experiments (Level II):**
+
+- [Controlled Descent](#controlled-descent): Automatically detect a free-fall
+  state and use active controls and actuators (parafoil, control surfaces) to
+  change the speed and direction of descent. Descent should be controlled in a
+  way that makes recovery of the payload easier.
+
+**Experiments (Level III):**
+
+- [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control): 
+  Use active control systems and actuators (reaction mass, ballast, control
+  surfaces, or thrust) to stabilize the roll axis (the axis along the balloon
+  tension line) during ascent and/or descent. In addition to control actuators,
+  pointing knowledge is necessary to feed the control system. Special
+  preference should be given to propulsive systems or aero control surfaces
+  that could also be adapted for use during a rocket's ascent phase.
+
+
+
+-------------------------------------------------------------------------------
 
 [^1]: Haumpton, Shane. 2018. [How to create a DIY gimbal
     stabilizer](https://www.diyphotography.net/how-to-create-a-diy-gimbal-stabilizer/).

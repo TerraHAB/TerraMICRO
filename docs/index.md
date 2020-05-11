@@ -6,7 +6,12 @@ Project.
 The documentation here logs our ideas, designs, and decisions through the
 design process from concept selection to post-flight analysis.
 
-GitHub: [github.com/TerraHAB/TerraMICRO](https://github.com/TerraHAB/TerraMICRO)
+!!! tip "Want to help?"
+    For more information on how to contribute to TerraMICRO or join the
+    TerraHAB team, see the **[Contribute](contribute.md)** page.
+
+    - **GitHub**: [github.com/TerraHAB/TerraMICRO](https://github.com/TerraHAB/TerraMICRO)
+    - **JIRA**: [terrahab.atlassian.net](https://terrahab.atlassian.net/)
 
 ## What is TerraHAB?
 
