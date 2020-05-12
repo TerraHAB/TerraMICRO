@@ -153,7 +153,9 @@ After balloon cutdown, control the descent of the payload. For a simpler
 challenge, use a reefed parachute. For a greater challenge, steer the
 descent path using a parafoil or aero control surfaces.
 
-**Pairs with:** [Rocket Technology Testbed](#rocket-technology-testbed)
+**Pairs with:** 
+[Rocket Technology Testbed](#rocket-technology-testbed),
+[Advanced Dynamics Modelling](#advanced-dynamics-modelling)
 
 ### Vegetation Density Experiment
 
@@ -236,6 +238,21 @@ images by either of the following methods:
 **Pairs with**: [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control),
 [On-board Image Processing](#on-board-image-processing)
 
+### Advanced Dynamics Modelling
+
+Create a dynamics model for the HAB bus that accounts for differential drag
+bus geometry, variable wind speed and direction, variable ambient pressure,
+twist and tension from the balloon tether, and the center of gravity of the bus
+or mass and location of internal components. If attitude control is also under
+consideration, also model the effects of that control system and simulate its
+behavior in different situations.
+
+**Pairs with:** 
+[Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control),
+[Altitude Control](#altitude-control),
+[Controlled Descent](#controlled-descent),
+[Flight Conditions Characterizer](#flight-conditions-characterizer),
+
 ### Mission Monitoring Ground Station
 
 Monitor telemetry in flight or during tests and display telemetry and other
@@ -249,6 +266,15 @@ used are:
 - Command and control interfaces for sending messages to the vehicle
 
 **Pairs with:** [Real-time Data Transfer](#real-time-data-transfer)
+
+### Mothership for Smaller Vehicles
+
+Stow smaller vehicles such as tiny quadcopters on the HAB and release them in
+flight. For a greater challenge, use the HAB as a relay for recording data or
+sending data from the child vehicles back to Mission Control.
+
+**Pairs with:** [Real-time Data Transfer](#real-time-data-transfer),
+[Long Distance Communications](#long-distance-communications)
 
 -------------------------------------------------------------------------------
 
@@ -317,6 +343,8 @@ prior to the flight.
 - [Characterize Radiation Environment](#characterize-radiation-environment):
   Measure ionizing radiation flux (using a geiger counter) over the course of
   the flight.
+- [Advanced Dynamics Modelling](#advanced-dynamics-modelling): Model the 
+  dynamics of the flight and validate the model with flight data.
 
 **Experiments (Level II):**
 
@@ -391,6 +419,8 @@ HAB and easily adapted for flight in a rocket.
   state and use active controls and actuators (parafoil, control surfaces) to
   change the speed and direction of descent. Descent should be controlled in a
   way that makes recovery of the payload easier.
+- [Advanced Dynamics Modelling](#advanced-dynamics-modelling): Model the 
+  dynamics of the flight and validate the model with flight data.
 
 **Experiments (Level III):**
 
@@ -401,8 +431,6 @@ HAB and easily adapted for flight in a rocket.
   pointing knowledge is necessary to feed the control system. Special
   preference should be given to propulsive systems or aero control surfaces
   that could also be adapted for use during a rocket's ascent phase.
-
-
 
 -------------------------------------------------------------------------------
 
