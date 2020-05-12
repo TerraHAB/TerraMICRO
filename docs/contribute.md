@@ -1,4 +1,11 @@
 # Contribute
+## Contact us!
+Chat with the team on the [RIT SPEX Slack](https://spexsuperslack.slack.com)
+in the `#alumni-hab` channel.
+
+## Follow development
+To track tasks and log progress, we've set up [a JIRA for this project](https://terrahab.atlassian.net/).
+
 ## Submit your designs
 TerraMICRO is an open source project. All of the source code and documentation
 is hosted on [the TerraMICRO GitHub repository](https://github.com/TerraHAB/TerraMICRO).
