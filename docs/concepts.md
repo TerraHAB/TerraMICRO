@@ -146,7 +146,7 @@ After balloon cutdown, control the descent of the payload. For a simpler
 challenge, use a reefed parachute. For a greater challenge, steer the
 descent path using a parafoil or aero control surfaces.
 
-**Pairs with:**
+**Pairs with:** [Advanced Dynamics Modelling](#advanced-dynamics-modelling)
 
 ### Vegetation Density Experiment
 
@@ -228,6 +228,22 @@ images by either of the following methods:
 **Pairs with**: [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control),
 [On-board Image Processing](#on-board-image-processing)
 
+### Advanced Dynamics Modelling
+
+Create a dynamics model for the HAB bus that accounts for differential drag
+bus geometry, variable wind speed and direction, variable ambient pressure,
+twist and tension from the balloon tether, and the center of gravity of the bus
+or mass and location of internal components. If attitude control is also under
+consideration, also model the effects of that control system and simulate its
+behavior in different situations.
+
+**Pairs with:** 
+[Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control),
+[Altitude Control](#altitude-control),
+[Controlled Descent](#controlled-descent),
+[Flight Conditions Characterizer](#flight-conditions-characterizer),
+
+
 ------------------------------------------------------------------------
 
 ## Reference Missions
@@ -295,6 +311,8 @@ prior to the flight.
   the flight.
 - [Characterize Radiation Environment](#characterize-radiation-environment): Measure ionizing radiation
   flux (using a geiger counter) over the course of the flight.
+- [Advanced Dynamics Modelling](#advanced-dynamics-modelling): Model the 
+  dynamics of the flight and validate the model with flight data.
 
 **Experiments (Level II):**
 
