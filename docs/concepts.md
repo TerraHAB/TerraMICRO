@@ -267,6 +267,15 @@ used are:
 
 **Pairs with:** [Real-time Data Transfer](#real-time-data-transfer)
 
+### Mothership for Smaller Vehicles
+
+Stow smaller vehicles such as tiny quadcopters on the HAB and release them in
+flight. For a greater challenge, use the HAB as a relay for recording data or
+sending data from the child vehicles back to Mission Control.
+
+**Pairs with:** [Real-time Data Transfer](#real-time-data-transfer),
+[Long Distance Communications](#long-distance-communications)
+
 -------------------------------------------------------------------------------
 
 ## Reference Missions
