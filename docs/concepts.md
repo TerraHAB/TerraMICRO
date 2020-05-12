@@ -153,11 +153,9 @@ After balloon cutdown, control the descent of the payload. For a simpler
 challenge, use a reefed parachute. For a greater challenge, steer the
 descent path using a parafoil or aero control surfaces.
 
-<<<<<<< HEAD
-**Pairs with:** [Advanced Dynamics Modelling](#advanced-dynamics-modelling)
-=======
-**Pairs with:** [Rocket Technology Testbed](#rocket-technology-testbed)
->>>>>>> master
+**Pairs with:** 
+[Rocket Technology Testbed](#rocket-technology-testbed),
+[Advanced Dynamics Modelling](#advanced-dynamics-modelling)
 
 ### Vegetation Density Experiment
 
