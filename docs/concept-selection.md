@@ -61,24 +61,58 @@ formulating design requirements from there.
     - Learn technologies I can’t use at work, without the overhead of it being
       safe.
 
+## Objective Criteria
+### Complexity
 
-## Complexity
+Complexity is at times a necessary evil, but it is generally undesirable.
+Complex systems are more prone to design errors, have more failure modes, and
+lead to overengineered solutions. Simple or elegent solutions are always
+preferred over complicated ones, when possible.
 
-To be determined.
+### Cost
 
-## Novelty
+This project is self funded out of our own pockets. Naturally, a lower cost is
+better.
 
-To be determined.
+### Potential for Future Work
 
-## Difficulty
+Engineering hours have the most "bang-for-buck" value on work that can be reused
+in future projects, or at least contributes to technical skills of the team (see
+also [Personal Development](#personal-development)). Concepts that have a clear
+path for future work or use in a future project are preferred.
 
-To be determined.
+## Subjective Criteria
+### Novelty
+Novel concepts are interesting and unique, two aspects which are desirable. It's
+the "cool factor."
 
-## Cost
+Novelty is usually grouped with [Complexity](#complexity), but the two are
+independent--novel concepts need not be complex.
 
-To be determined.
+### Difficulty
 
+Difficulty is relative to one's prior training and expertise. The same problem
+which may be simple to an experienced engineer could be very difficult to a
+novice, especially if one is teaching themselves. Difficulty is usually coupled
+with [Complexity](#complexity).
+
+A medium difficulty is preferred, as concepts are desired to be a challenge but
+not so difficult as to be unreasonable to accomplish. See also [Personal
+Development](#personal-development).
+
+### Personal Development
+One of the goals of this project is to serve as a vector for personal learning
+and development in technical skills, and professional development with a
+technical project. It is preferred if some but not all of the concepts of a
+design are in an area outside the team's expertise. This is coupled with
+[Difficulty](#difficulty).
 
 # Concept Selection Matrix
 
 Use a decision matrix to evaluate experiment mission concept feasibility.
+
+## Objective Selection Matrix
+
+## Objective and Subjective Selection Matrix
+
+## Selection Matrix Weighted by Personal Preference
