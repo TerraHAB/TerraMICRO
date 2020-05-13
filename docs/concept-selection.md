@@ -64,10 +64,12 @@ formulating design requirements from there.
 ## Objective Criteria
 ### Complexity
 
-Complexity is at times a necessary evil, but it is generally undesirable.
 Complex systems are more prone to design errors, have more failure modes, and
 lead to overengineered solutions. Simple or elegent solutions are always
-preferred over complicated ones, when possible.
+preferred over complicated ones, when possible. 
+
+Necessary complexity should be targeted and limited in scope. See also
+[Difficulty](#difficulty).
 
 ### Cost
 
@@ -93,12 +95,12 @@ independent--novel concepts need not be complex.
 
 Difficulty is relative to one's prior training and expertise. The same problem
 which may be simple to an experienced engineer could be very difficult to a
-novice, especially if one is teaching themselves. Difficulty is usually coupled
-with [Complexity](#complexity).
+novice, especially if one is teaching themselves. [Complicated](#complexity)
+designs are usually more difficult.
 
-A medium difficulty is preferred, as concepts are desired to be a challenge but
-not so difficult as to be unreasonable to accomplish. See also [Personal
-Development](#personal-development).
+Medium difficulty is preferred, as concepts are desired to be a challenge but
+not so difficult as to be unreasonable to accomplish. See also 
+[Personal Development](#personal-development).
 
 ### Personal Development
 One of the goals of this project is to serve as a vector for personal learning
