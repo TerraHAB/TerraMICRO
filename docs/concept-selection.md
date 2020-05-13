@@ -111,10 +111,16 @@ design are in an area outside the team's expertise. This is coupled with
 
 # Concept Selection Matrix
 
-Use a decision matrix to evaluate experiment mission concept feasibility.
+A decision matrix is used to evaluate experiment mission concept feasibility in
+a systematic way. By separating objective and subjective criteria, we can judge
+concepts by their technological feasibility and interest to the team
+independently.
 
 ## Objective Selection Matrix
 
 ## Objective and Subjective Selection Matrix
 
 ## Selection Matrix Weighted by Personal Preference
+Each team member is given the opportunity to weight the selection criteria based
+on personal preference. Normalizing the scores based on these weights may give
+a better reflection of which concept would be best to pursue.
