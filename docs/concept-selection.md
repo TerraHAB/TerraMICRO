@@ -61,24 +61,98 @@ formulating design requirements from there.
     - Learn technologies I can’t use at work, without the overhead of it being
       safe.
 
+## Objective Criteria
+### Complexity
 
-## Complexity
+Complex systems are more prone to design errors, have more failure modes, and
+lead to overengineered solutions. Simple or elegent solutions are always
+preferred over complicated ones, when possible. 
 
-To be determined.
+Necessary complexity should be targeted and limited in scope. See also
+[Difficulty](#difficulty).
 
-## Novelty
+### Cost
 
-To be determined.
+This project is self funded out of our own pockets. Naturally, a lower cost is
+better.
 
-## Difficulty
+### Potential for Future Work
 
-To be determined.
+Engineering hours have the most "bang-for-buck" value on work that can be
+reused in future projects, or at least contributes to technical skills of the
+team (see also [Personal Development](#personal-development)). Concepts that
+have a clear path for future work or use in a future project are preferred.
 
-## Cost
+### Tiered Objectives
+The ability for a concept to be broken down into smaller ones is an important
+characteristic that can balance out [Complexity](#complexity). What we look for
+is to get the most value out of every engineering hour spent working on this
+project. So if a concept can be decomposed into smaller, independently useful
+modules, those engineering hours don't go to waste. Even better if the modules
+have [Potential for Future Work](#potential-for-future-work). Objectives would
+be graduated by a combination of [Complexity](#complexity) and
+[Difficulty](#difficulty).
 
-To be determined.
+Ideally, a concept would be split into tiered objectives that also serve as
+progression milestones. As long as the lowest tier objective is met, the HAB
+will fly. Higher tier objectives are progressively more ambitious and advanced.
 
+A tiered approach enables the best chance of success, so concepts that are
+more easily broken up into tiered objectives are preferred.
+
+!!! note Modular vs Tiered Objectives
+    **Example of a system that is modular but *not* tiered**: `tlm module`,
+    `avionics module`, `sensing module`, `nuclear fusion module`. Here, if the
+    super complex module fails we don't really have a payload or experiment of
+    any sort.
+    
+    **Example of a system that is modular *and* tiered**: `tlm`, `sensing`,
+    `avionics`, `single axis spinning w/o controls` (maybe just gas + valves),
+    `single axis spin control` (add more complexity), `3 axis controls`,
+    `propulsive landing`. Where maybe that first leap into spinning is a
+    checkpoint, and if we do that we hit our minimum objective. Lets say we
+    hit the next one, `single axis control`, but when striving for 
+    `3-axis control` we stall. That's okay, because we'd launch with the last
+    checkpoint we achieved and still have a successful mission.
+
+## Subjective Criteria
+### Novelty
+Novel concepts are interesting and unique, two aspects which are desirable.
+It's the "cool factor."
+
+Novelty is usually grouped with [Complexity](#complexity), but the two are
+independent--novel concepts need not be complex.
+
+### Difficulty
+
+Difficulty is relative to one's prior training and expertise. The same problem
+which may be simple to an experienced engineer could be very difficult to a
+novice, especially if one is teaching themselves. [Complicated](#complexity)
+designs are usually more difficult.
+
+Medium difficulty is preferred, as concepts are desired to be a challenge but
+not so difficult as to be unreasonable to accomplish. See also 
+[Personal Development](#personal-development).
+
+### Personal Development
+One of the goals of this project is to serve as a vector for personal learning
+and development in technical skills, and professional development with a
+technical project. It is preferred if some but not all of the concepts of a
+design are in an area outside the team's expertise. This is coupled with
+[Difficulty](#difficulty).
 
 # Concept Selection Matrix
 
-Use a decision matrix to evaluate experiment mission concept feasibility.
+A decision matrix is used to evaluate experiment mission concept feasibility in
+a systematic way. By separating objective and subjective criteria, we can judge
+concepts by their technological feasibility and interest to the team
+independently.
+
+## Objective Selection Matrix
+
+## Objective and Subjective Selection Matrix
+
+## Selection Matrix Weighted by Personal Preference
+Each team member is given the opportunity to weight the selection criteria based
+on personal preference. Normalizing the scores based on these weights may give
+a better reflection of which concept would be best to pursue.
