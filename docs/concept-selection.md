@@ -78,27 +78,47 @@ better.
 
 ### Potential for Future Work
 
-Engineering hours have the most "bang-for-buck" value on work that can be reused
-in future projects, or at least contributes to technical skills of the team (see
-also [Personal Development](#personal-development)). Concepts that have a clear
-path for future work or use in a future project are preferred.
+Engineering hours have the most "bang-for-buck" value on work that can be
+reused in future projects, or at least contributes to technical skills of the
+team (see also [Personal Development](#personal-development)). Concepts that
+have a clear path for future work or use in a future project are preferred.
 
-### Modularity
+### Tiered Objectives
 The ability for a concept to be broken down into smaller ones is an important
 characteristic that can balance out [Complexity](#complexity). What we look for
 is to get the most value out of every engineering hour spent working on this
-project. So if a concept can be decomposed into smaller, independently
-useful modules, those engineering hours don't go to waste. Even better if the
-modules have [Potential for Future Work](#potential-for-future-work).
+project. So if a concept can be decomposed into smaller, independently useful
+modules, those engineering hours don't go to waste. Even better if the modules
+have [Potential for Future Work](#potential-for-future-work). Objectives would
+be graduated by a combination of [Complexity](#complexity) and
+[Difficulty](#difficulty).
 
-No matter the [Complexity](#complexity) or [Difficulty](#difficulty), a
-modular concept is always preferred because it enables the best chance of
-success.
+Ideally, a concept would be split into tiered objectives that also serve as
+progression milestones. As long as the lowest tier objective is met, the HAB
+will fly. Higher tier objectives are progressively more ambitious and advanced.
+
+A tiered approach enables the best chance of success, so concepts that are
+more easily broken up into tiered objectives are preferred.
+
+!!! note Modular vs Tiered Objectives
+    **Example of a system that is modular but *not* tiered**: `tlm module`,
+    `avionics module`, `sensing module`, `nuclear fusion module`. Here, if the
+    super complex module fails we don't really have a payload or experiment of
+    any sort.
+    
+    **Example of a system that is modular *and* tiered**: `tlm`, `sensing`,
+    `avionics`, `single axis spinning w/o controls` (maybe just gas + valves),
+    `single axis spin control` (add more complexity), `3 axis controls`,
+    `propulsive landing`. Where maybe that first leap into spinning is a
+    checkpoint, and if we do that we hit our minimum objective. Lets say we
+    hit the next one, `single axis control`, but when striving for 
+    `3-axis control` we stall. That's okay, because we'd launch with the last
+    checkpoint we achieved and still have a successful mission.
 
 ## Subjective Criteria
 ### Novelty
-Novel concepts are interesting and unique, two aspects which are desirable. It's
-the "cool factor."
+Novel concepts are interesting and unique, two aspects which are desirable.
+It's the "cool factor."
 
 Novelty is usually grouped with [Complexity](#complexity), but the two are
 independent--novel concepts need not be complex.
