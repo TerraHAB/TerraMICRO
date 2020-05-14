@@ -83,6 +83,18 @@ in future projects, or at least contributes to technical skills of the team (see
 also [Personal Development](#personal-development)). Concepts that have a clear
 path for future work or use in a future project are preferred.
 
+### Modularity
+The ability for a concept to be broken down into smaller ones is an important
+characteristic that can balance out [Complexity](#complexity). What we look for
+is to get the most value out of every engineering hour spent working on this
+project. So if a concept can be decomposed into smaller, independently
+useful modules, those engineering hours don't go to waste. Even better if the
+modules have [Potential for Future Work](#potential-for-future-work).
+
+No matter the [Complexity](#complexity) or [Difficulty](#difficulty), a
+modular concept is always preferred because it enables the best chance of
+success.
+
 ## Subjective Criteria
 ### Novelty
 Novel concepts are interesting and unique, two aspects which are desirable. It's
