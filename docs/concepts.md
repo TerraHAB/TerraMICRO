@@ -276,6 +276,16 @@ sending data from the child vehicles back to Mission Control.
 **Pairs with:** [Real-time Data Transfer](#real-time-data-transfer),
 [Long Distance Communications](#long-distance-communications)
 
+### Sprawled Small Scale HABs
+
+Design and build a small scale HAB (50 grams) which includes a downward facing camera. 
+The small scale HABs should be able to function for at least a few hours, this includes 
+power on time and storage requirements. Multiple of these small scale HABs will be connected 
+together with lightweight wire or string. The collective HABs can be used to map out the 
+terrain over large distances as connections between individual HABs will be lengthy (maybe 500m - 1km).
+
+**Pairs with:** None
+
 -------------------------------------------------------------------------------
 
 ## Reference Missions
