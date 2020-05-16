@@ -284,7 +284,7 @@ power on time and storage requirements. Multiple of these small scale HABs will 
 together with lightweight wire or string. The collective HABs can be used to map out the 
 terrain over large distances as connections between individual HABs will be lengthy (maybe 500m - 1km).
 
-**Pairs with:** None
+**Pairs with:** [Vegetation Density Experiment](#vegetation-density-experiment)
 
 -------------------------------------------------------------------------------
 
