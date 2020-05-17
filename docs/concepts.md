@@ -88,7 +88,7 @@ Perform image processing (of any level) on images or video on the
 payload electronics in flight.[^3] For an extra challenge, apply any of
 the following constraints:
 
-- Payload electronics do not exceed \$30.
+- Payload electronics do not exceed $30.
 - Image processing algorithms have a practical or scientific usebeyond a simple
   demonstrator.
 - Image processing takes place on an FPGA. Bonus if it occurs in realtime.
@@ -201,7 +201,7 @@ Image the Earth, sky, or atmospheric limb with a camera sensitive to two
 or more spectral bands. Optionally apply any of the following
 constraints:
 
-- Use components which cost no more than \$50.[^6]
+- Use components which cost no more than $50.[^6]
 - Calibrate the instrument on the ground (optionally in flight-like
   conditions)
 
@@ -215,7 +215,7 @@ Build an instrument that measures position of the payload bus based on
 optical measurements of the sky.[^7][^8] Optionally apply any of the
 following constraints:
 
-- Use components which cost no more than \$50.
+- Use components which cost no more than $50.
 - Calibrate the instrument on the ground (optionally in flight-like
   conditions)
 - Implement a custom algorithm to derive orientation from images of
