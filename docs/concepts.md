@@ -94,7 +94,7 @@ the following constraints:
 - Image processing takes place on an FPGA. Bonus if it occurs in realtime.
 - Image processing includes data fusion with additional sensors orcamera sources.
 
-**Pairs with:** [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control)
+**Pairs with:** [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform-bus-attitude-control)
 
 ### Real-time Data Transfer
 
@@ -108,7 +108,7 @@ in flight.
 [Characterize Atmospheric Composition](#characterize-atmospheric-composition),
 [Characterize Radiation Environment](#characterize-radiation-environment),
 [Altitude Control](#altitude-control), 
-[Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control),
+[Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform-bus-attitude-control),
 [Rocket Technology Testbed](#rocket-technology-testbed)
 
 ### Characterize Atmospheric Composition
@@ -162,7 +162,7 @@ descent path using a parafoil or aero control surfaces.
 Measure vegetation density using NDVI with cameras in flight. For a
 greater challenge, do the image processing on-board.[^4]
 
-**Pairs with:** [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control),
+**Pairs with:** [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform-bus-attitude-control),
 [On-board Image Processing](#on-board-image-processing)
 
 ### F' Flight Software Ecosystem
@@ -205,7 +205,7 @@ constraints:
 - Calibrate the instrument on the ground (optionally in flight-like
   conditions)
 
-**Pairs with:** [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control),
+**Pairs with:** [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform-bus-attitude-control),
 [On-board Image Processing](#on-board-image-processing),
 [Vegetation Density Experiment](#vegetation-density-experiment)
 
@@ -221,7 +221,7 @@ following constraints:
 - Implement a custom algorithm to derive orientation from images of
   the sky.
 
-**Pairs with:** [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control),
+**Pairs with:** [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform-bus-attitude-control),
 [On-board Image Processing](#on-board-image-processing)
 
 ### Synthetic Image Quality Enhancement
@@ -235,7 +235,7 @@ images by either of the following methods:
    resolution image products from low resolution images captured in
    flight.[^10][^11]
 
-**Pairs with**: [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control),
+**Pairs with**: [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform-bus-attitude-control),
 [On-board Image Processing](#on-board-image-processing)
 
 ### Advanced Dynamics Modelling
@@ -248,7 +248,7 @@ consideration, also model the effects of that control system and simulate its
 behavior in different situations.
 
 **Pairs with:** 
-[Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control),
+[Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform-bus-attitude-control),
 [Altitude Control](#altitude-control),
 [Controlled Descent](#controlled-descent),
 [Flight Conditions Characterizer](#flight-conditions-characterizer),
@@ -303,7 +303,7 @@ the main payload storage over a wired or wireless link.
 
 Correlate data with similar sensors on the HAB bus to create better stabilization algorithms and control methods.
 
-**Pairs with:** [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control),
+**Pairs with:** [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform-bus-attitude-control),
 [On-board Image Processing](#on-board-image-processing), [Intra-balloon Environment Sensors](#intra-balloon-environment-sensors)
 -------------------------------------------------------------------------------
 
@@ -346,7 +346,7 @@ all payload cameras on the ground before flight.
 
 **Experiments (Level III):**
 
-- [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control): 
+- [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform-bus-attitude-control): 
   Use active control systems and actuators (reaction mass, ballast, electric
   motors, thrust) to stabilize the platform where the payload cameras are
   mounted. In addition to control actuators, pointing knowledge is necessary to
@@ -424,7 +424,7 @@ environment.
 - [Altitude Control](#altitude-control): Maintain a set altitude in flight and
   change the altitude set point in response to a command from the ground
   station.
-- [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control): 
+- [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform-bus-attitude-control): 
   Maintain a set attitude (of the imaging platform) and change the target
   attitude in response to a command from the ground station.
 
@@ -453,7 +453,7 @@ HAB and easily adapted for flight in a rocket.
 
 **Experiments (Level III):**
 
-- [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control): 
+- [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform-bus-attitude-control): 
   Use active control systems and actuators (reaction mass, ballast, control
   surfaces, or thrust) to stabilize the roll axis (the axis along the balloon
   tension line) during ascent and/or descent. In addition to control actuators,
