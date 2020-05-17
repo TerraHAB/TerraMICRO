@@ -286,6 +286,25 @@ terrain over large distances as connections between individual HABs will be leng
 
 **Pairs with:** [Vegetation Density Experiment](#vegetation-density-experiment)
 
+### Launch Platform
+
+Develop a launch platform system capable of controlling the payload during launch preparations. 
+Includes clamp system to retain payload to the ground during launch preparation. Data/Power/Fueling connections available to interface with the payload. 
+System would allow for hands off approach during setup from filling the balloon to last minute software updates and real time telemetry without relying on onboard radios.
+
+Design can be tiered, for example power and data would be primary goal and fueling cabilities as a stretch goal.
+
+**Pairs with:** [Mission Monitoring Ground Station](#mission-monitoring-ground-station)
+
+### Balloon Movement Sensors
+
+Develop a sensor platform to measure inertial movement of balloon (acceleration, rotation, magnetic heading) through full flight of balloon. Send the data to
+the main payload storage over a wired or wireless link.
+
+Correlate data with similar sensors on the HAB bus to create better stabilization algorithms and control methods.
+
+**Pairs with:** [Stable Imaging Platform / Bus Attitude Control](#stable-imaging-platform--bus-attitude-control),
+[On-board Image Processing](#on-board-image-processing), [Intra-balloon Environment Sensors](#intra-balloon-environment-sensors)
 -------------------------------------------------------------------------------
 
 ## Reference Missions
