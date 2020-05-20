@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Mission Concepts - TerraMICRO</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Mission Concepts";
+    var mkdocs_page_input_path = "concepts.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> TerraMICRO</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Mission Concepts</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#hab-architecture">μHAB Architecture</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#list-of-experiment-ideas">List of Experiment Ideas</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#stable-imaging-platform-bus-attitude-control">Stable Imaging Platform / Bus Attitude Control</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#altitude-control">Altitude Control</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#intra-balloon-environment-sensors">Intra-balloon Environment Sensors</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#on-board-image-processing">On-board Image Processing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#real-time-data-transfer">Real-time Data Transfer</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#characterize-atmospheric-composition">Characterize Atmospheric Composition</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#characterize-radiation-environment">Characterize Radiation Environment</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#model-and-test-latex-balloon-burst-conditions">Model and Test Latex Balloon Burst Conditions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#controlled-descent">Controlled Descent</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#vegetation-density-experiment">Vegetation Density Experiment</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#f-flight-software-ecosystem">F' Flight Software Ecosystem</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#long-distance-communications">Long Distance Communications</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#multispectral-hyperspectral-instrument">Multispectral / Hyperspectral Instrument</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#star-tracker">Star Tracker</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#synthetic-image-quality-enhancement">Synthetic Image Quality Enhancement</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#advanced-dynamics-modelling">Advanced Dynamics Modelling</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mission-monitoring-ground-station">Mission Monitoring Ground Station</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mothership-for-smaller-vehicles">Mothership for Smaller Vehicles</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sprawled-small-scale-habs">Sprawled Small Scale HABs</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#launch-platform">Launch Platform</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#balloon-movement-sensors">Balloon Movement Sensors</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#reference-missions">Reference Missions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#vegetation-density-mapper">Vegetation Density Mapper</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#flight-conditions-characterizer">Flight Conditions Characterizer</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#flying-robot">Flying Robot</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#rocket-technology-testbed">Rocket Technology Testbed</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../concept-selection/">Concept Selection</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../design-reqs/">Design Requirements</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../glossary/">Glossary</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../contribute/">Contribute</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">TerraMICRO</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Mission Concepts</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="mission-concepts">Mission Concepts</h1>
+<p>TerraMICRO was conceived as a payload-agnostic high altitude balloon
+architecture. In addition, TerraMICRO should host one or more technical
+or scientific experiments. These experiments need not be related to
+uHAB---they serve as a means to validate the design and architecture
+while stressing the system in a real-world use case.</p>
+<h2 id="hab-architecture">μHAB Architecture</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>μHAB is under active development. Visit the project's GitHub page for
+<a href="https://github.com/RIT-Space-Exploration/uHAB">µHAB designs and documentation</a>.</p>
+</div>
+<p>The purpose of μHAB is to provide a flexible, expandable, and affordable
+platform that contains all of the necessary functionality for a
+high-altitude balloon mission without the hassle of starting a
+completely new design from scratch.</p>
+<p><strong>Flexible</strong>: μHAB contains a wealth of available I/O that is broken out
+to easily accessible headers. Both 5V and 3.3V digital pins are
+available for ease of future component integrations. The powerful
+300MHz, 32-bit microcontroller has capabilities for CANbus, EBI/EMI,
+Ethernet, I²C, IrDA, LINbus, MMC/SD/SDIO, QSPI, SPI, SSC, UART/USART,
+USB, x24 16-bit ADC (with oversampling), and x2 12-bit DAC. μHAB also
+features selection headers for multiple types of antennas and
+remove-before-flight safes.</p>
+<p><strong>Expandable</strong>: The layout of the PCB includes the familiar pinout of
+the common Arduino Mega so that commercial Arduino shields may be
+utilized. Additional I/O is available separately. The microcontroller
+selected offers enough processing power to handle many more additional
+tasks and the available power supply allows for some limited draw for
+future expansion modules called <em>helmets</em>.</p>
+<p><strong>Affordable</strong>: μHAB will contain only the components necessary for a
+successful mission as outlined below. Extra functionality will be
+available in the form of completely separate additional <em>helmets</em> as
+needed. By reducing the functionality to a minimum, μHAB lowers the
+overall costs associated for a HAB launch and allows for more expansion.</p>
+<h2 id="list-of-experiment-ideas">List of Experiment Ideas</h2>
+<h3 id="stable-imaging-platform-bus-attitude-control">Stable Imaging Platform / Bus Attitude Control</h3>
+<p>Active gimbals make for a (power hungry) off-the-shelf solution for
+image stabilization. For a challenge one could build a gimballed camera
+mount from scratch.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<p>A more novel idea would be to control bus attitude. A senior design team
+from 2017 attempted to do attitude control with a reaction wheel, but I
+don't think they had a way to dump momentum. A simpler (and more novel)
+approach would be to use RC aircraft engines or drone motors to actively
+counteract wind forces. A simpler objective could be using drone
+propellers for anti-spin control or active ballast weights for
+anti-rocking control.</p>
+<p><strong>Pairs with:</strong> <a href="#on-board-image-processing">On-board Image Processing</a>,
+<a href="#rocket-technology-testbed">Rocket Technology Testbed</a></p>
+<h3 id="altitude-control">Altitude Control</h3>
+<p>Actively change the ascent or descent rate. For a simpler demonstration,
+only control the ascent rate. For a challenge, maintain an altitude set
+point. For a greater challenge, extend the flight duration by
+controlling altitude.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
+<p><strong>Pairs with:</strong> <a href="#intra-balloon-environment-sensors">Intra-balloon Environment Sensors</a></p>
+<h3 id="intra-balloon-environment-sensors">Intra-balloon Environment Sensors</h3>
+<p>Develop a sensor platform to measure environmental conditions
+(temperature, pressure, humidity) within the balloon from ambient,
+through filling, and finally through the burst event. Send the data to
+the main payload storage over a wired or wireless link.</p>
+<p>As a stretch goal, instrument the bus with environmental sensors.
+Compare balloon internal conditions to ambient ones add correlate it
+with altitude rate of change or burst events.</p>
+<p><strong>Pairs with:</strong> <a href="#altitude-control">Altitude Control</a>,
+<a href="#characterize-atmospheric-composition">Characterize Atmospheric Composition</a>,
+<a href="#model-and-test-latex-balloon-burst-conditions">Model and Test Latex Balloon Burst Conditions</a></p>
+<h3 id="on-board-image-processing">On-board Image Processing</h3>
+<p>Perform image processing (of any level) on images or video on the
+payload electronics in flight.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> For an extra challenge, apply any of
+the following constraints:</p>
+<ul>
+<li>Payload electronics do not exceed $30.</li>
+<li>Image processing algorithms have a practical or scientific usebeyond a simple
+  demonstrator.</li>
+<li>Image processing takes place on an FPGA. Bonus if it occurs in realtime.</li>
+<li>Image processing includes data fusion with additional sensors orcamera sources.</li>
+</ul>
+<p><strong>Pairs with:</strong> <a href="#stable-imaging-platform-bus-attitude-control">Stable Imaging Platform / Bus Attitude Control</a></p>
+<h3 id="real-time-data-transfer">Real-time Data Transfer</h3>
+<p>Receive real time telemetry and payload data in flight. For a greater
+challenge, send commands from a ground station during the flight. For a
+simple demonstration, send limited health and status telemetry. As a
+stretch, send rich data (like photos or live video) to a ground station
+in flight.</p>
+<p><strong>Pairs with:</strong> <a href="#intra-balloon-environment-sensors">Intra-balloon Environment Sensors</a>,
+<a href="#characterize-atmospheric-composition">Characterize Atmospheric Composition</a>,
+<a href="#characterize-radiation-environment">Characterize Radiation Environment</a>,
+<a href="#altitude-control">Altitude Control</a>, 
+<a href="#stable-imaging-platform-bus-attitude-control">Stable Imaging Platform / Bus Attitude Control</a>,
+<a href="#rocket-technology-testbed">Rocket Technology Testbed</a></p>
+<h3 id="characterize-atmospheric-composition">Characterize Atmospheric Composition</h3>
+<p>Measure atmospheric composition along the balloon's ascent. Characterize
+how composition changes with altitude. For a greater challenge, use
+multiple flights to see how composition changes with altitude from
+different geographic locations, time of day, time of year, or different
+weather conditions.</p>
+<p><strong>Pairs with:</strong> <a href="#altitude-control">Altitude Control</a>,
+<a href="#intra-balloon-environment-sensors">Intra-balloon Environment Sensors</a></p>
+<h3 id="characterize-radiation-environment">Characterize Radiation Environment</h3>
+<p>Measure radiation intensity along the balloon's ascent. Characterize how
+intensity changes with altitude. For a greater challenge, use multiple
+flights to see how intensity changes with altitude from different
+geographic locations, time of day, time of year, or different weather
+conditions.</p>
+<p><strong>Pairs with:</strong> <a href="#altitude-control">Altitude Control</a>,
+<a href="#intra-balloon-environment-sensors">Intra-balloon Environment Sensors</a></p>
+<h3 id="model-and-test-latex-balloon-burst-conditions">Model and Test Latex Balloon Burst Conditions</h3>
+<p>Prior to launch, predict the conditions that lead to the balloon's burst
+event. Instrument the payload and balloon to test the model in flight.
+For an extra challenge, apply any of the following constraints:</p>
+<ul>
+<li>Model the burst event only using parameters that can be measured in
+  flight.</li>
+<li>Test the model on the ground with simulated atmospheric conditions
+  and a sub- or full-scale balloon.</li>
+<li>Record high-speed video of the balloon bursting in flight.</li>
+</ul>
+<p><strong>Pairs with:</strong> <a href="#intra-balloon-environment-sensors">Intra-balloon Environment Sensors</a></p>
+<h3 id="controlled-descent">Controlled Descent</h3>
+<p>After balloon cutdown, control the descent of the payload. For a simpler
+challenge, use a reefed parachute. For a greater challenge, steer the
+descent path using a parafoil or aero control surfaces.</p>
+<p><strong>Pairs with:</strong> 
+<a href="#rocket-technology-testbed">Rocket Technology Testbed</a>,
+<a href="#advanced-dynamics-modelling">Advanced Dynamics Modelling</a></p>
+<h3 id="vegetation-density-experiment">Vegetation Density Experiment</h3>
+<p>Measure vegetation density using NDVI with cameras in flight. For a
+greater challenge, do the image processing on-board.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></p>
+<p><strong>Pairs with:</strong> <a href="#stable-imaging-platform-bus-attitude-control">Stable Imaging Platform / Bus Attitude Control</a>,
+<a href="#on-board-image-processing">On-board Image Processing</a></p>
+<h3 id="f-flight-software-ecosystem">F' Flight Software Ecosystem</h3>
+<p>F' (F Prime) is a component-driven framework that enables rapid
+development and deployment of spaceflight and other embedded software
+applications.<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup> F' is part of NASA Jet Propultion Lab's technology
+ecosystem, open source, and also has demos that are meant to be run on a
+Raspberry Pi.</p>
+<p>F' can be used to create common HAB flight software leveraging existing
+components. The team will create additional components to meet the needs
+of specific HABs, with the ability to open source for use by other HAB
+teams.</p>
+<ul>
+<li>Run HAB FSW with F' using a one off greedy customization, not going
+  out of the way for code reuse.</li>
+<li>Design HAB FSW with F' to be common and for use by other HAB teams
+  as a base.</li>
+<li>Design hardware payloads with accompanying F' components to be
+  common for use by teams that want a plug and play HAB payload.</li>
+</ul>
+<p><strong>Pairs with:</strong> </p>
+<h3 id="long-distance-communications">Long Distance Communications</h3>
+<p>Send or receive data to the HAB in flight while it is beyond visual
+range. For a greater challenge, send or receive data while the HAB is
+beyond the geographical horizon of the ground station.</p>
+<p><strong>Pairs with:</strong> <a href="#real-time-data-transfer">Real-time Data Transfer</a></p>
+<h3 id="multispectral-hyperspectral-instrument">Multispectral / Hyperspectral Instrument</h3>
+<p>Image the Earth, sky, or atmospheric limb with a camera sensitive to two
+or more spectral bands. Optionally apply any of the following
+constraints:</p>
+<ul>
+<li>Use components which cost no more than $50.<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup></li>
+<li>Calibrate the instrument on the ground (optionally in flight-like
+  conditions)</li>
+</ul>
+<p><strong>Pairs with:</strong> <a href="#stable-imaging-platform-bus-attitude-control">Stable Imaging Platform / Bus Attitude Control</a>,
+<a href="#on-board-image-processing">On-board Image Processing</a>,
+<a href="#vegetation-density-experiment">Vegetation Density Experiment</a></p>
+<h3 id="star-tracker">Star Tracker</h3>
+<p>Build an instrument that measures position of the payload bus based on
+optical measurements of the sky.<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup><sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup> Optionally apply any of the
+following constraints:</p>
+<ul>
+<li>Use components which cost no more than $50.</li>
+<li>Calibrate the instrument on the ground (optionally in flight-like
+  conditions)</li>
+<li>Implement a custom algorithm to derive orientation from images of
+  the sky.</li>
+</ul>
+<p><strong>Pairs with:</strong> <a href="#stable-imaging-platform-bus-attitude-control">Stable Imaging Platform / Bus Attitude Control</a>,
+<a href="#on-board-image-processing">On-board Image Processing</a></p>
+<h3 id="synthetic-image-quality-enhancement">Synthetic Image Quality Enhancement</h3>
+<p>Use computer vision techniques to improve the effective resolution of
+images by either of the following methods:</p>
+<ol>
+<li>Stitch multiple image frames into a larger composite image of an
+   area wider than the camera's field of view.<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup></li>
+<li>Use multi-frame super-resolution algorithms to create high
+   resolution image products from low resolution images captured in
+   flight.<sup id="fnref:10"><a class="footnote-ref" href="#fn:10">10</a></sup><sup id="fnref:11"><a class="footnote-ref" href="#fn:11">11</a></sup></li>
+</ol>
+<p><strong>Pairs with</strong>: <a href="#stable-imaging-platform-bus-attitude-control">Stable Imaging Platform / Bus Attitude Control</a>,
+<a href="#on-board-image-processing">On-board Image Processing</a></p>
+<h3 id="advanced-dynamics-modelling">Advanced Dynamics Modelling</h3>
+<p>Create a dynamics model for the HAB bus that accounts for differential drag
+bus geometry, variable wind speed and direction, variable ambient pressure,
+twist and tension from the balloon tether, and the center of gravity of the bus
+or mass and location of internal components. If attitude control is also under
+consideration, also model the effects of that control system and simulate its
+behavior in different situations.</p>
+<p><strong>Pairs with:</strong> 
+<a href="#stable-imaging-platform-bus-attitude-control">Stable Imaging Platform / Bus Attitude Control</a>,
+<a href="#altitude-control">Altitude Control</a>,
+<a href="#controlled-descent">Controlled Descent</a>,
+<a href="#flight-conditions-characterizer">Flight Conditions Characterizer</a>,</p>
+<h3 id="mission-monitoring-ground-station">Mission Monitoring Ground Station</h3>
+<p>Monitor telemetry in flight or during tests and display telemetry and other
+information with an intuitive user interface. For a greater challenge, also
+implement command and control elements. Examples of UI elements that could be
+used are:</p>
+<ul>
+<li>Live-updating plots of telemetry values over time</li>
+<li>Live-updating log messages from the avionics</li>
+<li>Live video feeds from cameras on board</li>
+<li>Command and control interfaces for sending messages to the vehicle</li>
+</ul>
+<p><strong>Pairs with:</strong> <a href="#real-time-data-transfer">Real-time Data Transfer</a></p>
+<h3 id="mothership-for-smaller-vehicles">Mothership for Smaller Vehicles</h3>
+<p>Stow smaller vehicles such as tiny quadcopters on the HAB and release them in
+flight. For a greater challenge, use the HAB as a relay for recording data or
+sending data from the child vehicles back to Mission Control.</p>
+<p><strong>Pairs with:</strong> <a href="#real-time-data-transfer">Real-time Data Transfer</a>,
+<a href="#long-distance-communications">Long Distance Communications</a></p>
+<h3 id="sprawled-small-scale-habs">Sprawled Small Scale HABs</h3>
+<p>Design and build a small scale HAB (50 grams) which includes a downward facing camera. 
+The small scale HABs should be able to function for at least a few hours, this includes 
+power on time and storage requirements. Multiple of these small scale HABs will be connected 
+together with lightweight wire or string. The collective HABs can be used to map out the 
+terrain over large distances as connections between individual HABs will be lengthy (maybe 500m - 1km).</p>
+<p><strong>Pairs with:</strong> <a href="#vegetation-density-experiment">Vegetation Density Experiment</a></p>
+<h3 id="launch-platform">Launch Platform</h3>
+<p>Develop a launch platform system capable of controlling the payload during launch preparations. 
+Includes clamp system to retain payload to the ground during launch preparation. Data/Power/Fueling connections available to interface with the payload. 
+System would allow for hands off approach during setup from filling the balloon to last minute software updates and real time telemetry without relying on onboard radios.</p>
+<p>Design can be tiered, for example power and data would be primary goal and fueling cabilities as a stretch goal.</p>
+<p><strong>Pairs with:</strong> <a href="#mission-monitoring-ground-station">Mission Monitoring Ground Station</a></p>
+<h3 id="balloon-movement-sensors">Balloon Movement Sensors</h3>
+<p>Develop a sensor platform to measure inertial movement of balloon (acceleration, rotation, magnetic heading) through full flight of balloon. Send the data to
+the main payload storage over a wired or wireless link.</p>
+<p>Correlate data with similar sensors on the HAB bus to create better stabilization algorithms and control methods.</p>
+<p><strong>Pairs with:</strong> <a href="#stable-imaging-platform-bus-attitude-control">Stable Imaging Platform / Bus Attitude Control</a>,
+<a href="#on-board-image-processing">On-board Image Processing</a>, <a href="#intra-balloon-environment-sensors">Intra-balloon Environment Sensors</a></p>
+<hr />
+<h2 id="reference-missions">Reference Missions</h2>
+<p>This section outlines reference payloads and mission profiles for
+TerraMICRO which satisfy the main mission objective of demonstrating the
+uHAB avionics architecture by supporting a combination of technical or
+scientific experiments.</p>
+<h3 id="vegetation-density-mapper">Vegetation Density Mapper</h3>
+<p><em>The spiritual successor to</em> <a href="https://github.com/RIT-Space-Exploration/hab-cv">Where U At
+Plants?</a> <em>and Phil's
+vision for</em> <a href="https://github.com/RIT-Space-Exploration/SPEX-Project-Definition-Documents/blob/master/HAB-CV/hab-cv.pdf">HAB
+CV</a>.</p>
+<p>Mount at least two ground-facing cameras to the HAB payload. Collect
+photos or videos of the ground in the Red and Near-Infrared spectral
+bands as needed to compute
+<a href="https://www.earthdatascience.org/courses/earth-analytics/multispectral-remote-sensing-data/vegetation-indices-NDVI-in-R/">NDVI</a>
+on the ground below. Calibrate spectral response and lens distortion of
+all payload cameras on the ground before flight.</p>
+<p><strong>Experiments (Level I):</strong></p>
+<ul>
+<li><a href="#vegetation-density-experiment">Vegetation Density Experiment</a>: Record
+  flight data (GPS coordinates, altitude, orientation) in sync with image
+  captures. Use flight data, camera field of view, and image data to project
+  image data onto a map. Flight data and imagery is stored to local memory. All
+  data processing and analysis takes place after flight data is recovered.</li>
+</ul>
+<p><strong>Experiments (Level II):</strong></p>
+<ul>
+<li><a href="#on-board-image-processing">On-board Image Processing</a>: Perform data
+  processing (linking flight data to imagery) and analysis (compute NDVI)
+  on-board during the flight.</li>
+<li><a href="#real-time-data-transfer">Real-time Data Transfer</a>: Downlink all or part of
+  the data to a ground station while in flight.</li>
+</ul>
+<p><strong>Experiments (Level III):</strong></p>
+<ul>
+<li><a href="#stable-imaging-platform-bus-attitude-control">Stable Imaging Platform / Bus Attitude Control</a>: 
+  Use active control systems and actuators (reaction mass, ballast, electric
+  motors, thrust) to stabilize the platform where the payload cameras are
+  mounted. In addition to control actuators, pointing knowledge is necessary to
+  feed the control system.</li>
+</ul>
+<h3 id="flight-conditions-characterizer">Flight Conditions Characterizer</h3>
+<p><em>A knowledge-gathering mission to inform flight characteristics and
+environments on future HAB flights.</em></p>
+<p>Instrument the HAB bus to measure ambient conditions, internal
+conditions within the bus structure, and internal conditions within the
+balloon over a long-duration flight to gain detailed insights into the
+conditions subjected to the hardware. Calibrate all sensors on the
+ground in known conditions, ideally with an environmental test chamber,
+prior to the flight.</p>
+<p><strong>Experiments (Level I):</strong></p>
+<ul>
+<li><a href="#characterize-atmospheric-composition">Characterize Atmospheric Composition</a>: 
+  Measure temperature, humidity, pressure, and composition of the air over the
+  course of the flight.</li>
+<li><a href="#characterize-radiation-environment">Characterize Radiation Environment</a>:
+  Measure ionizing radiation flux (using a geiger counter) over the course of
+  the flight.</li>
+<li><a href="#advanced-dynamics-modelling">Advanced Dynamics Modelling</a>: Model the 
+  dynamics of the flight and validate the model with flight data.</li>
+</ul>
+<p><strong>Experiments (Level II):</strong></p>
+<ul>
+<li><a href="#intra-balloon-environment-sensors">Intra-balloon Environment Sensors</a>: 
+  Measure temperature, humidity, pressure and density of helium within the
+  balloon. Also measure detailed thermal gradients throughout the payload bus
+  and components.</li>
+<li><a href="#real-time-data-transfer">Real-time Data Transfer</a>: Downlink all or part of the data to a
+  ground station while in flight.</li>
+<li><a href="#model-and-test-latex-balloon-burst-conditions">Model and Test Latex Balloon Burst Conditions</a>:
+  Model and test (on the ground) the conditions that lead to the balloon's
+  burst event. Instrument the balloon and payload to validate this model and
+  characterize the burst event in detail.</li>
+</ul>
+<p><strong>Experiments (Level III):</strong></p>
+<ul>
+<li><a href="#altitude-control">Altitude Control</a>: Maintain flight at certain altitude(s)
+  to gain more data about the conditions at that height in order to smooth out
+  outliers and variations. Optionally extend mission flight time to gain more
+  data.</li>
+</ul>
+<h3 id="flying-robot">Flying Robot</h3>
+<p><em>A knowledge-building mission that develops key building blocks toward
+satellite-like operations tasks such as command and control, data links,
+and ACS systems (like detumbling).</em></p>
+<p>Send commands from a ground station that are executed by the HAB in
+flight. The HAB reacts to both command instructions and stimuli from its
+environment.</p>
+<p><strong>Experiments (Level I):</strong></p>
+<ul>
+<li><a href="#real-time-data-transfer">Real-time Data Transfer</a>: Downlink all or part
+  of the data to a ground station while in flight. Execute commands sent from a
+  ground station and report acknowledgement of a received command to the
+  ground.</li>
+</ul>
+<p><strong>Experiments (Level II):</strong></p>
+<ul>
+<li><a href="#controlled-descent">Controlled Descent</a>: Automatically detect a free-fall
+  state and use active controls and actuators (parafoil, control surfaces) to
+  change the speed and direction of descent. Descent should be controlled in a
+  way that makes recovery of the payload easier.</li>
+</ul>
+<p><strong>Experiments (Level III):</strong></p>
+<ul>
+<li><a href="#altitude-control">Altitude Control</a>: Maintain a set altitude in flight and
+  change the altitude set point in response to a command from the ground
+  station.</li>
+<li><a href="#stable-imaging-platform-bus-attitude-control">Stable Imaging Platform / Bus Attitude Control</a>: 
+  Maintain a set attitude (of the imaging platform) and change the target
+  attitude in response to a command from the ground station.</li>
+</ul>
+<h3 id="rocket-technology-testbed">Rocket Technology Testbed</h3>
+<p><em>A technology demonstration mission for key technologies meant for use with
+rockets.</em></p>
+<p>Develop avionics, logic, and other foundational technologies for controls,
+telemetry, and ground stations using requirements based on what would be used
+in an M-class hobby rocket. Select experiments that can be demonstrated on a
+HAB and easily adapted for flight in a rocket.</p>
+<p><strong>Experiments (Level I):</strong></p>
+<ul>
+<li><a href="#real-time-data-transfer">Real-time Data Transfer</a>: Downlink all or part of
+  the data to a ground station while in flight.</li>
+</ul>
+<p><strong>Experiments (Level II):</strong></p>
+<ul>
+<li><a href="#controlled-descent">Controlled Descent</a>: Automatically detect a free-fall
+  state and use active controls and actuators (parafoil, control surfaces) to
+  change the speed and direction of descent. Descent should be controlled in a
+  way that makes recovery of the payload easier.</li>
+<li><a href="#advanced-dynamics-modelling">Advanced Dynamics Modelling</a>: Model the 
+  dynamics of the flight and validate the model with flight data.</li>
+</ul>
+<p><strong>Experiments (Level III):</strong></p>
+<ul>
+<li><a href="#stable-imaging-platform-bus-attitude-control">Stable Imaging Platform / Bus Attitude Control</a>: 
+  Use active control systems and actuators (reaction mass, ballast, control
+  surfaces, or thrust) to stabilize the roll axis (the axis along the balloon
+  tension line) during ascent and/or descent. In addition to control actuators,
+  pointing knowledge is necessary to feed the control system. Special
+  preference should be given to propulsive systems or aero control surfaces
+  that could also be adapted for use during a rocket's ascent phase.</li>
+</ul>
+<hr />
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Haumpton, Shane. 2018. <a href="https://www.diyphotography.net/how-to-create-a-diy-gimbal-stabilizer/">How to create a DIY gimbal
+stabilizer</a>.
+DIY Photography.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Sushko, Audrey, <em>et. al.</em> 2017. <a href="http://asl.stanford.edu/wp-content/papercite-data/pdf/Suskho.Tedjarati.ea.AERO2017.pdf">Low Cost, High Endurance,
+Altitude-Controlled Latex Balloon for Near-Space Research
+(ValBal)</a>.
+Standford Space Initiative.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Linden, Philip, <em>et. al.</em> 2018. <a href="https://github.com/RIT-Space-Exploration/hab-cv/blob/master/reports/Project%20Definition%20Document/hab-cv.pdf">On-Board Image Processing and
+Computer Vision Techniques on Low-Cost Consumer Electronics for
+Vegetation Density Mapping and Other
+Experiments</a>.
+RIT Space Exploration.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>Linden, Philip. 2018. <a href="https://github.com/RIT-Space-Exploration/hab-cv">Where U At Plants? (WUAP): Capturing and
+Masking Images from Raspberry Pi 3 + Pi
+Camera</a>. RIT Space
+Exploration.&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>NASA Jet Propulsion Lab. 2020. <a href="https://github.com/nasa/fprime">F´: A Flight-Proven,
+Multi-Platform, Open-Source Flight Software
+Framework</a>. GitHub.&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>Sigernes, Fred, <em>et. al.</em>. 2018. <a href="https://www.osapublishing.org/DirectPDFAccess/898DF890-994C-43DA-FBF0E930CF791000_382214/oe-26-5-6021.pdf">Do it yourself hyperspectral
+imager for handheld to airborne
+operations</a>.
+Optics Express.&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:7">
+<p>McBryde, Christopher Ryan. 2012. <a href="https://repositories.lib.utexas.edu/handle/2152/ETD-UT-2012-05-4608">A star tracker design for
+CubeSats</a>.
+University of Texas at Austin.&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="fn:8">
+<p>Smith, Casey Grant. 2017. <a href="https://scholarsmine.mst.edu/masters_theses/7724/?utm_source=scholarsmine.mst.edu%2Fmasters_theses%2F7724&amp;utm_medium=PDF&amp;utm_campaign=PDFCoverPages">Development and implementation of star
+tracker based attitude
+determination</a>.
+Missouri University of Science and Technology.&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+<li id="fn:9">
+<p>Szeliski, Richard. 2006. <a href="http://www.cs.toronto.edu/~kyros/courses/2530/papers/Lecture-14/Szeliski2006.pdf">Image Alignment and Stitching: A
+Tutorial</a>.
+Foundations and Trends in Computer Graphics and Vision.&#160;<a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+</li>
+<li id="fn:10">
+<p>Nelson, Kyle, <em>et. al.</em> 2012. <a href="https://ieeexplore.ieee.org/abstract/document/6411669">Performance Evaluation of
+Multi-Frame Super-Resolution
+Algorithms</a>.
+IEEE.&#160;<a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+</li>
+<li id="fn:11">
+<p>Farsiu, Sina, <em>et. al</em>. 2004. <a href="https://ieeexplore.ieee.org/abstract/document/1331445">Fast and robust multiframe super
+resolution</a>.
+IEEE.&#160;<a class="footnote-backref" href="#fnref:11" title="Jump back to footnote 11 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../concept-selection/" class="btn btn-neutral float-right" title="Concept Selection">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../concept-selection/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../js/extra.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

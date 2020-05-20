@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Concept Selection - TerraMICRO</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Concept Selection";
+    var mkdocs_page_input_path = "concept-selection.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> TerraMICRO</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../concepts/">Mission Concepts</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Concept Selection</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#concepts-vs-requirements">Concepts vs. Requirements</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#selection-criteria">Selection Criteria</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#objective-criteria">Objective Criteria</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#complexity">Complexity</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cost">Cost</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#potential-for-future-work">Potential for Future Work</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#tiered-objectives">Tiered Objectives</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#subjective-criteria">Subjective Criteria</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#novelty">Novelty</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#difficulty">Difficulty</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#personal-development">Personal Development</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../design-reqs/">Design Requirements</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../glossary/">Glossary</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../contribute/">Contribute</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">TerraMICRO</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Concept Selection</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="concept-selection">Concept Selection</h1>
+<p>Concepts shown or adapted from this list may be included in the flight
+design of TerraMICRO. Which concepts make it in depends on the combined
+design effort required by their individual complexity, difficulty,
+expected cost, team expertise in related fields, novelty, and interest
+from the design team.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Since TerraMICRO is a demonstrator for a flight platform, there is no
+limit to the complexity, cost, or difficulty of the experiments it
+supports. A concept is considered feasible, then, if TerraHAB
+contributors decide that it is sufficiently interesting, novel, or
+within their pe1rsonal budgets for complexity, cost, and difficulty.</p>
+</div>
+<h2 id="concepts-vs-requirements">Concepts vs. Requirements</h2>
+<p>Concepts are ideas. Ideas lead to objectives, and requirements are
+derived to meet those objectives. It is important to remember that we
+use concepts like those listed in this section in order to organize the
+possible mission objectives and technology demonstrations, and later as
+guiding principles for deciding actual mission objectives and
+formulating design requirements from there.</p>
+<h2 id="selection-criteria">Selection Criteria</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Members of the TerraHAB team were polled on what aspects of a HAB project
+motivate them and provide a fulfilling outlet for engineering skills.
+Mission concepts should be crafted to meet these criteria because engineers
+who take pride and genuine interest in a project do good work and stick with
+it until the end.</p>
+<p><strong>By building a high altitude balloon, I want to...</strong></p>
+<ul>
+<li>Improve my breadboarding and electrical engineering skills.</li>
+<li>Learn how to design a PCB.</li>
+<li>Finish a project, for once.</li>
+<li>Set an example for RIT Space Exploration projects.</li>
+<li>Work with my friends on an engineering project.</li>
+<li>Learn how to program an FPGA for real time image processing.</li>
+<li>Launch a HAB for the first time.</li>
+<li>Develop a novel design for a difficult problem.</li>
+<li>Publish elements of the design process and the results to the internet.</li>
+<li>Build something that can be positively shown to recruiters and future
+  employers.</li>
+<li>keep my engineering skills sharp across many disciplines.</li>
+<li>Improve my analog engineering skills.</li>
+<li>Engineer cheap, COTS hardware to do the job that usually requires
+  expensive or specialty hardware if you were to do it "in the real world."</li>
+<li>Design a flexible platform that can be passed on to students.</li>
+<li>Implement improved tracking capabilities.</li>
+<li>Test subsystems until fully confident in launch capabilities.</li>
+<li>Have a mission where <em>everything</em> succeeds.</li>
+<li>Bring positive attention to RIT, RIT Space Exploration, and SPEXcast with
+  media and blog posts.</li>
+<li>Mutually feed on each other’s efforts &amp; passions to keep momentum.</li>
+<li>Build the simplest concept that still satisfies my itch to do something
+  novel and technical.</li>
+<li>Learn and practice proper documentation skills.</li>
+<li>Learn technologies I can’t use at work, without the overhead of it being
+  safe.</li>
+</ul>
+</div>
+<h2 id="objective-criteria">Objective Criteria</h2>
+<h3 id="complexity">Complexity</h3>
+<p>Complex systems are more prone to design errors, have more failure modes, and
+lead to overengineered solutions. Simple or elegent solutions are always
+preferred over complicated ones, when possible. </p>
+<p>Necessary complexity should be targeted and limited in scope. See also
+<a href="#difficulty">Difficulty</a>.</p>
+<h3 id="cost">Cost</h3>
+<p>This project is self funded out of our own pockets. Naturally, a lower cost is
+better.</p>
+<h3 id="potential-for-future-work">Potential for Future Work</h3>
+<p>Engineering hours have the most "bang-for-buck" value on work that can be
+reused in future projects, or at least contributes to technical skills of the
+team (see also <a href="#personal-development">Personal Development</a>). Concepts that
+have a clear path for future work or use in a future project are preferred.</p>
+<h3 id="tiered-objectives">Tiered Objectives</h3>
+<p>The ability for a concept to be broken down into smaller ones is an important
+characteristic that can balance out <a href="#complexity">Complexity</a>. What we look for
+is to get the most value out of every engineering hour spent working on this
+project. So if a concept can be decomposed into smaller, independently useful
+modules, those engineering hours don't go to waste. Even better if the modules
+have <a href="#potential-for-future-work">Potential for Future Work</a>. Objectives would
+be graduated by a combination of <a href="#complexity">Complexity</a> and
+<a href="#difficulty">Difficulty</a>.</p>
+<p>Ideally, a concept would be split into tiered objectives that also serve as
+progression milestones. As long as the lowest tier objective is met, the HAB
+will fly. Higher tier objectives are progressively more ambitious and advanced.</p>
+<p>A tiered approach enables the best chance of success, so concepts that are
+more easily broken up into tiered objectives are preferred.</p>
+<div class="admonition note modular vs tiered objectives">
+<p class="admonition-title">Note</p>
+<p><strong>Example of a system that is modular but <em>not</em> tiered</strong>: <code>tlm module</code>,
+<code>avionics module</code>, <code>sensing module</code>, <code>nuclear fusion module</code>. Here, if the
+super complex module fails we don't really have a payload or experiment of
+any sort.</p>
+<p><strong>Example of a system that is modular <em>and</em> tiered</strong>: <code>tlm</code>, <code>sensing</code>,
+<code>avionics</code>, <code>single axis spinning w/o controls</code> (maybe just gas + valves),
+<code>single axis spin control</code> (add more complexity), <code>3 axis controls</code>,
+<code>propulsive landing</code>. Where maybe that first leap into spinning is a
+checkpoint, and if we do that we hit our minimum objective. Lets say we
+hit the next one, <code>single axis control</code>, but when striving for 
+<code>3-axis control</code> we stall. That's okay, because we'd launch with the last
+checkpoint we achieved and still have a successful mission.</p>
+</div>
+<h2 id="subjective-criteria">Subjective Criteria</h2>
+<h3 id="novelty">Novelty</h3>
+<p>Novel concepts are interesting and unique, two aspects which are desirable.
+It's the "cool factor."</p>
+<p>Novelty is usually grouped with <a href="#complexity">Complexity</a>, but the two are
+independent--novel concepts need not be complex.</p>
+<h3 id="difficulty">Difficulty</h3>
+<p>Difficulty is relative to one's prior training and expertise. The same problem
+which may be simple to an experienced engineer could be very difficult to a
+novice, especially if one is teaching themselves. <a href="#complexity">Complicated</a>
+designs are usually more difficult.</p>
+<p>Medium difficulty is preferred, as concepts are desired to be a challenge but
+not so difficult as to be unreasonable to accomplish. See also 
+<a href="#personal-development">Personal Development</a>.</p>
+<h3 id="personal-development">Personal Development</h3>
+<p>One of the goals of this project is to serve as a vector for personal learning
+and development in technical skills, and professional development with a
+technical project. It is preferred if some but not all of the concepts of a
+design are in an area outside the team's expertise. This is coupled with
+<a href="#difficulty">Difficulty</a>.</p>
+<h1 id="concept-selection-matrix">Concept Selection Matrix</h1>
+<p>A decision matrix is used to evaluate experiment mission concept feasibility in
+a systematic way. By separating objective and subjective criteria, we can judge
+concepts by their technological feasibility and interest to the team
+independently.</p>
+<h2 id="objective-selection-matrix">Objective Selection Matrix</h2>
+<h2 id="objective-and-subjective-selection-matrix">Objective and Subjective Selection Matrix</h2>
+<h2 id="selection-matrix-weighted-by-personal-preference">Selection Matrix Weighted by Personal Preference</h2>
+<p>Each team member is given the opportunity to weight the selection criteria based
+on personal preference. Normalizing the scores based on these weights may give
+a better reflection of which concept would be best to pursue.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../design-reqs/" class="btn btn-neutral float-right" title="Design Requirements">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../concepts/" class="btn btn-neutral" title="Mission Concepts"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../concepts/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../design-reqs/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../js/extra.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

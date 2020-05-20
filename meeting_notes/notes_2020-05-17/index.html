@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>2020-05-17  Meeting Notes - TerraMICRO</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "2020-05-17  Meeting Notes";
+    var mkdocs_page_input_path = "meeting_notes/notes_2020-05-17.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> TerraMICRO</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Introduction</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../concepts/">Mission Concepts</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../concept-selection/">Concept Selection</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../design-reqs/">Design Requirements</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../glossary/">Glossary</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../contribute/">Contribute</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">TerraMICRO</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>2020-05-17  Meeting Notes</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="2020-05-17-meeting-notes">2020-05-17  Meeting Notes</h1>
+<hr />
+<h3 id="attendees">Attendees</h3>
+<p>Austin Bodzas, Daniel Mitchell, Drew Walters, Dylan Wagner, Matt Glazer, Phil Linden</p>
+<hr />
+<h1 id="choosing-a-project">Choosing a project</h1>
+<h3 id="scores-weighted-normalized-subjective-objective">Scores Weighted &amp; Normalized, Subjective &amp; Objective</h3>
+<p>Austin<br />
+Personal Favorites: Stable imaging platform or Bus attitude control<br />
+1 - Sprawled Small-Scale HABs<br />
+2 - Advanced Dynamic Modeling<br />
+3 - Mission Monitoring GND Station</p>
+<p>Daniel<br />
+Personal Favorites: Top 3 are my favorites<br />
+1 - Real-time data transfer<br />
+2 - Altitude Control<br />
+3 - On-board Image Processing</p>
+<p>Drew<br />
+Personal Favorites: Atmospheric composition &amp; Star tracker (+ other things)<br />
+1 - Intra-balloon environment sensors<br />
+2 - Advanced dynamics modeling<br />
+3 - F' flight software ecosystem</p>
+<p>Dylan<br />
+Personal Favorites: Listed below (did not fill out document)<br />
+1 - Altitude control (Extend mission and create usability)<br />
+2 - Sprawled HAB (Make something small but capable)<br />
+3 - Long-distance comms (Very useful)</p>
+<p>Matt<br />
+Personal Favorites:  Top 3 are favorites<br />
+1 - Stabilized platform<br />
+2 - Controlled descent<br />
+3 - Altitude control </p>
+<p>Phil<br />
+Personal Favorites: Star tracker, Attitude control, Real-time data transfer<br />
+1 - Advanced dynamics modeling<br />
+2 - Stable imaging platform<br />
+3 - Controlled descent</p>
+<hr />
+<h3 id="mission-proposal">Mission Proposal</h3>
+<p>Strong capabilities that also unlocks future missions</p>
+<p><strong>Sensing Input Subsystem</strong><br />
+MVP - General sensing (Intra-balloon sensing, Atmospheric composition)<br />
+Ideal - Dynamics modeling  </p>
+<p><strong>Vehicle Control Subsystem</strong><br />
+MVP - Altitude control (controls, novel)<br />
+Ideal - Attitude control / stabilization (Requires Dyamics modeling)  </p>
+<p><strong>Imaging Subsystem</strong><br />
+MVP - Image processing (required for a lot of things)<br />
+Ideal - Pick one from first bullet below  </p>
+<p><strong>Communications Subsystem</strong><br />
+MVP - Real-time data transfer (This is required for basically everything)<br />
+Ideal - GND station visualization &amp; processing<br />
+Holy crap they actually did that - Multiple base stations with telemetry repeater  </p>
+<p><strong>Ground Hardware Subsystem</strong><br />
+MVP - Ground station telemetry receiver (also required)<br />
+Ideal - Strongback deployment with tether<br />
+Holy crap they actually did that - Fill balloon through ground station</p>
+<hr />
+<h3 id="general-project-discussion">General Project Discussion</h3>
+<ul>
+<li>Some missions are required for other missions. One such example is image processing. <ul>
+<li>Required for vegetation mapping, spectral imaging, star tracker, and image quality enhancement</li>
+</ul>
+</li>
+<li>Builds really well into others such as controlled descent</li>
+<li>Thoughts on a cross-country flight
+    &gt; Not ideal to start with this, but doable. It's probably best to build up from lower levels</li>
+<li>Seems that everyone is in agreement on wanting to do multiple missions
+    &gt; Building out technologies useful for future missions</li>
+<li>Much of this tech does not apply specifically to HABs, could be used for other missions as well (rockets, satellites)</li>
+<li>Refine tiered mission outline above into a full tiered mission description/proposal (MVP, Ideal, Holy crap they actually did that) [Defining Scope]<ul>
+<li>Come up with basic resource requirements for each<ul>
+<li>Time</li>
+<li>Money</li>
+<li>Tools/Resources</li>
+</ul>
+</li>
+<li>Optimizations for time or money (mission variants/tradeoffs)</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="eng-8-discussion">ENG-8 Discussion</h3>
+<p><a href="https://terrahab.atlassian.net/browse/ENG-8">ENG-8 JIRA</a>
+* Thoughts on splitting up a system into mission-critical subsystems &amp; defining verification standards for each
+    * Austin: Sometimes hard to draw the line. What is mission critical?
+    * Drew: Apply same 3 tiers (MVP, Ideal, Wow they actually did it) <br/>
+        * Mission Critical Concern
+            * Tracking / Recovery (complete loss otherwise)
+            * Cutdown (Complete loss otherwise, safety)
+            * Any pyro (Safety concerns)
+        * Mission Success
+            * Non-critical MVP subsystems
+        * Mission Excellence
+            * Everything works perfectly + novel science out of it
+    * Daniel: Let's have a mindset that these define verification rigor for each specified tier
+* Where is okay to take risks and develop without reviews or test?
+* Process/Verification tier definitions
+    * Mission Critical - review and validation essential, do not fly unless certain it will work
+    * Mission Success - review required but some acceptable risk
+    * Mission Excellence - dev/experimental, no review required. Sanity check is encouraged but not required
+* Question about what documentation looks like
+    * Decisions are justified within documentation posted online
+    * Documentation is desired to be good, but nothing specific is currently required
+    * Don't get bogged down, just get it done. Keep each other accountable
+- [ ] TODO (Phil): Epic for this
+    * Can discuss what process/verification is appropriate for each tier
+    * May vary based on specific subsystem</p>
+<hr />
+<h3 id="cost-funding">Cost &amp; Funding</h3>
+<ul>
+<li>Feel for budgets (Sugarhabby)<ul>
+<li>Phil - couple hundred bucks, more willing to put in additional time. Wants to travel to launch.</li>
+<li>Matt - ~1,000 on just hardware with a goal of minimizing it. Wants to travel to launch.</li>
+<li>Austin - couple hundred bucks, concern with unequal contribution &amp; resulting dynamics</li>
+<li>Drew - ~1,000 but would prefer to avoid specific purchases where necessary, not concerned about timeline but restricted weekly</li>
+<li>Dan - Willing to buy my own hardware for my subsystems &amp; equipment to enable remote access</li>
+</ul>
+</li>
+<li>What can we leverage? <ul>
+<li>Matt and Dan and Austin and Drew have 3D printers</li>
+<li>Matt and Dan have soldering equipment, oscilloscopes, power supplies</li>
+<li>Most everyone have microcontrollers</li>
+</ul>
+</li>
+<li>Matt, Austin, Dan wants a complete set of hardware ideally</li>
+<li>Using COTS hardware (raspberry pi, microcontrollers - Arduino)<ul>
+<li>Austin: Concern about risk for timeline </li>
+<li>Dan: Doesn't want to use COTS micros or dev boards, doesn't map well to professional experience</li>
+</ul>
+</li>
+<li>It's okay to have an intermediate step to launch with dev boards if we need to</li>
+<li>Desire to not reduce scope initially, want to aim for custom-embedded solutions initially</li>
+<li>What is the timeline? What slip is okay?</li>
+<li>Austin's 3 concerns<ul>
+<li>Risk of using in-house hardware</li>
+<li>Designing for reusability can add a lot of complexity</li>
+<li>More complexity with safety-critical components</li>
+</ul>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../js/extra.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
